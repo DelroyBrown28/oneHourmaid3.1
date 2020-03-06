@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,600;1,600&display=swap');
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #F1F1E6;
+    display: flex;
+    flex-flow: column;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+
+    .selectService,
+    .numberOfRooms,
+    .timeDate {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .progressTracker {
+        height: 100px;
+        width: 100%;
+        
+
+    }
+
+    .trackerBar {
+        position: relative;
+        border: 2px solid #FFB992;
+        top: 40px;
+        width: 270px;
+
+    }
+
+    .selectService,
+    .numberOfRooms,
+    .timeDate {
+        display: flex;
+        height: 50px;
+        position: relative;
+        text-align: center;
+    }
+
+    .selectService {
+        left: 13px;
+        bottom: -21px;
+        width: 95px;
+
+
+    }
+
+    .numberOfRooms {
+        left: 123px;
+        
+        width: 80px;
+        bottom: 30px;
+    }
+
+    .timeDate {
+        bottom: 80px;
+        width: 95px;
+        float: right;
+        
+    }
+
+
+
+    .selectService-text {
+        position: relative;
+        margin-top: 25px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+    }
+
+
+    .fa-dot-circle {
+        position: absolute;
+        top: 0;
+        color: #CEF8F9;
+    }
+}
