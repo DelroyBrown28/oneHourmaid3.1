@@ -41,6 +41,8 @@ html {
     .timeDate {
         display: flex;
         height: 50px;
+        width: 95px;
+
         position: relative;
         text-align: center;
     }
@@ -55,15 +57,15 @@ html {
 
     .numberOfRooms {
         left: 123px;
-        
         width: 80px;
         bottom: 30px;
     }
 
     .timeDate {
-        bottom: 80px;
+        position: absolute;
+        top: 41px;
         width: 95px;
-        float: right;
+        right: 13px;
         
     }
 
