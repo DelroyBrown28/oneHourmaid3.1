@@ -38,7 +38,7 @@ html {
 .basicClean,
 .deepClean,
 .movingInOut {
-    display: none;
+    
 }
 
 
@@ -48,7 +48,7 @@ html {
 
 
 
-    /*----PROGRESS TRACKER8----*/
+    /*----PROGRESS TRACKER----*/
 
     .progressTracker {
         position: relative;
@@ -91,7 +91,6 @@ html {
 
     }
 
-
     .progress-text {
         position: relative;
         margin-top: 25px;
@@ -109,23 +108,18 @@ html {
 
     /*----SELECT SERVICE BLURB----*/
 
-    .basicCleanBlurb {
-        position: relative;
-        top: 40px;
-        height: 76px;
-    }
 
     .selectServiceType-title {
         position: absolute;
         font-size: 20px;
-        top: 0;
+        top: 120px;
         margin: 0;
         font-weight: 300;
     }
 
     .selectServiceType-text {
         position: absolute;
-        bottom: 0;
+        top: 155px;
         margin: 0;
         font-size: 20px;
         font-weight: 200;
@@ -142,7 +136,7 @@ html {
 
     .serviceTypes {
         position: relative;
-        top: 130px;
+        top: 170px;
         flex-flow: column;
         justify-content: space-between;
         height: 280px;
@@ -163,6 +157,14 @@ html {
     /*----BASIC CLEAN OPTIONS----*/
 
 
+    .basicCleanDescrip-button,
+    .basicCleanBlurb,
+    .basicClean-serviceType,
+    .cleaningDescription-text {
+        display: none;
+    }
+
+
     .basicCleanDescrip-button {
         position: relative;
         width: 77%;
@@ -171,8 +173,14 @@ html {
         border-radius: 10px;
         background-color: #F7E5C0;
 
-
     }
+
+    .basicCleanBlurb {
+        position: relative;
+        top: 40px;
+        height: 76px;
+    }
+
 
     .basicClean-serviceType {
         position: relative;
@@ -232,7 +240,7 @@ html {
 
     .nextButtonWrap {
         position: relative;
-        top: 610px;
+        top: 350px;
 
 
     }
