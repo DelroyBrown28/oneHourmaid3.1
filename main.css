@@ -37,9 +37,7 @@ html {
 .serviceTypes,
 .basicClean,
 .deepClean,
-.movingInOut {
-    
-}
+.movingInOut {}
 
 
 /* smartphones----------- */
@@ -50,10 +48,29 @@ html {
 
     /*----PROGRESS TRACKER----*/
 
+
+    .mainPageIndex {
+        z-index: 1000;
+        opacity: 1;
+    }
+
+    .mainPageIndexHide {
+        opacity: 0;
+    }
+
+
+    .mainPageWrap {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+
     .progressTracker {
         position: relative;
         height: 100px;
         width: 100%;
+        
 
     }
 
@@ -112,14 +129,14 @@ html {
     .selectServiceType-title {
         position: absolute;
         font-size: 20px;
-        top: 120px;
+        top: 65px;
         margin: 0;
         font-weight: 300;
     }
 
     .selectServiceType-text {
         position: absolute;
-        top: 155px;
+        top: 95px;
         margin: 0;
         font-size: 20px;
         font-weight: 200;
@@ -136,10 +153,11 @@ html {
 
     .serviceTypes {
         position: relative;
-        top: 170px;
+        top: 200px;
         flex-flow: column;
         justify-content: space-between;
         height: 280px;
+
 
     }
 
@@ -160,8 +178,21 @@ html {
     .basicCleanDescrip-button,
     .basicCleanBlurb,
     .basicClean-serviceType,
-    .cleaningDescription-text {
-        display: none;
+    .cleaningDescription-text,
+    .basicCleanWrap {
+        
+        
+    }
+
+    .basicCleanWrap {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 150px;
+        left: -500px;
+        
+
+
     }
 
 
@@ -240,7 +271,7 @@ html {
 
     .nextButtonWrap {
         position: relative;
-        top: 350px;
+        bottom: 30px;
 
 
     }
