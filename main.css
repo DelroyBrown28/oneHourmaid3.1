@@ -388,7 +388,7 @@ html {
         position: relative;
         top: 50px;
         height: 150px;
-        
+
 
     }
 
@@ -423,7 +423,7 @@ html {
         flex-flow: column;
         justify-content: space-around;
         height: 600px;
-        
+
 
 
 
@@ -446,7 +446,7 @@ html {
     .nextButtonWrap {
         position: relative;
         top: 265px;
-        
+
 
     }
 
@@ -462,4 +462,11 @@ html {
     }
 
 
+}
+
+.basicClean:active,
+.deepClean:active,
+.movingInOut:active,
+.nextButton:active {
+    opacity: 0.7;
 }
