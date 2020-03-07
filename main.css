@@ -11,37 +11,40 @@ html {
     flex-flow: column;
 }
 
+.selectService,
+.numberOfRooms,
+.progressTracker,
+.timeDate,
+.selectServiceBlurb,
+.serviceTypes,
+.basicClean,
+.deepClean,
+.movingInOut,
+.nextButtonWrap,
+.nextButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* smartphones----------- */
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
 
-    .selectService,
-    .numberOfRooms,
-    .timeDate,
-    .selectServiceBlurb,
-    .serviceTypes,
-    .basicClean,
-    .deepClean,
-    .movingInOut,
-    .nextButtonWrap,
-    .nextButton {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
     /*----PROGRESS TRACKER8----*/
 
     .progressTracker {
+        position: relative;
         height: 100px;
         width: 100%;
-        
-
 
     }
 
     .trackerBar {
-        position: relative;
-        border: 2px solid #FFB992;
+        position: absolute;
+        border: 1.5px solid #FFB992;
         top: 40px;
         width: 270px;
 
@@ -53,39 +56,36 @@ html {
         display: flex;
         height: 50px;
         width: 95px;
-        position: relative;
+        bottom: 9px;
+        position: absolute;
         text-align: center;
     }
 
     .selectService {
-        left: 13px;
-        bottom: -21px;
-        width: 95px;
+        left: 11px;
 
     }
 
     .numberOfRooms {
-        left: 123px;
         width: 80px;
-        bottom: 30px;
     }
 
     .timeDate {
-        position: absolute;
-        top: 41px;
         width: 95px;
-        right: 13px;
+        right: 11px;
 
     }
 
-    .selectService-text {
+
+    .progress-text {
         position: relative;
         margin-top: 25px;
         font-weight: 300;
         font-size: 13px;
+
     }
 
-    .fa-dot-circle {
+    .fa-circle {
         position: absolute;
         top: 0;
         color: #CEF8F9;
@@ -97,7 +97,7 @@ html {
     .selectServiceBlurb {
         position: relative;
         top: 40px;
-        
+
         height: 76px;
     }
 
@@ -128,8 +128,7 @@ html {
 
     .serviceTypes {
         position: relative;
-        
-        top: 100px;
+        top: 130px;
         flex-flow: column;
         justify-content: space-between;
         height: 280px;
@@ -143,7 +142,7 @@ html {
         width: 260px;
         height: 58px;
         font-size: 25px;
-        
+
         border-radius: 10px;
         background-color: #F7E5C0;
     }
@@ -153,8 +152,8 @@ html {
 
     .nextButtonWrap {
         position: relative;
-        top: 300px;
-        
+        top: 285px;
+
 
     }
 
@@ -163,7 +162,300 @@ html {
         font-size: 25px;
         width: 250px;
         height: 40px;
+        color: #fff;
+        background-color: #E08872;
+        border-radius: 10px;
+
+    }
+
+
+}
+
+/* iPads----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+
+
+    /*----PROGRESS TRACKER8----*/
+
+    .progressTracker {
+        position: relative;
+        height: 100px;
+        width: 100%;
+
+
+    }
+
+    .trackerBar {
+        position: absolute;
+        border: 1.5px solid #FFB992;
+        top: 40px;
+        width: 85%;
+
+    }
+
+
+    .selectService,
+    .numberOfRooms,
+    .timeDate {
+        display: flex;
+        height: 50px;
+        width: 95px;
+        bottom: 9px;
+        position: absolute;
+        text-align: center;
+    }
+
+    .selectService {
+        left: 13px;
+
+    }
+
+    .numberOfRooms {
+        width: 80px;
+    }
+
+    .timeDate {
+        width: 95px;
+        right: 13px;
+
+    }
+
+    .progress-text {
+        position: relative;
+        margin-top: 25px;
+        font-weight: 300;
+        font-size: 13px;
+
+    }
+
+    .fa-circle {
+        position: absolute;
+        top: 0;
+        color: #CEF8F9;
+        font-size: 1.3em;
+
+    }
+
+
+    /*----SELECT SERVICE BLURB----*/
+
+    .selectServiceBlurb {
+        position: relative;
+        top: 50px;
+        height: 120px;
+
+    }
+
+    .selectServiceType-title {
+        position: absolute;
+        font-size: 25px;
+        top: 0;
+        margin: 0;
+        font-weight: 300;
+    }
+
+    .selectServiceType-text {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        font-size: 30px;
+        font-weight: 200;
+        text-align: center;
+
+    }
+
+    .bolItalic {
+        font-weight: 600;
+    }
+
+    /*----SERVICE TYPE BUTTONS----*/
+
+
+    .serviceTypes {
+        position: relative;
+        top: 100px;
+        flex-flow: column;
+        justify-content: space-around;
+        height: 450px;
+
+
+
+    }
+
+    .basicClean,
+    .deepClean,
+    .movingInOut {
+        position: relative;
+        width: 410px;
+        height: 65px;
+        font-size: 25px;
+        border-radius: 10px;
+        background-color: #F7E5C0;
+    }
+
+    /*----NEXT BUTTON----*/
+
+
+    .nextButtonWrap {
+        position: relative;
+        top: 200px;
+
+    }
+
+    .nextButton {
+        position: relative;
+        font-size: 25px;
+        width: 410px;
+        height: 60px;
+        color: #fff;
+        background-color: #E08872;
+        border-radius: 10px;
+
+    }
+
+
+}
+
+
+/* iPad pro----------- */
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) {
+    /*----PROGRESS TRACKER8----*/
+
+    .progressTracker {
+        position: relative;
+        height: 130px;
+        width: 100%;
+
+    }
+
+    .trackerBar {
+        position: absolute;
+        border: 1.5px solid #FFB992;
+        top: 40px;
+        width: 85%;
+
+    }
+
+
+    .selectService,
+    .numberOfRooms,
+    .timeDate {
+        display: flex;
+        height: 50px;
+        bottom: 50px;
+        position: absolute;
+        text-align: center;
+    }
+
+    .selectService {
+        left: 13px;
+        width: 120px;
+
+    }
+
+    .numberOfRooms {
+        width: 120px;
+    }
+
+    .timeDate {
+        right: 13px;
+        width: 95px;
+
+
+    }
+
+    .progress-text {
+        position: relative;
+        margin-top: 100px;
+        font-weight: 300;
+        font-size: 20px;
+
+    }
+
+    .fa-circle {
+        position: absolute;
+        top: 0;
+        color: #CEF8F9;
+        font-size: 2em;
+
+    }
+
+
+    /*----SELECT SERVICE BLURB----*/
+
+    .selectServiceBlurb {
+        position: relative;
+        top: 50px;
+        height: 150px;
         
+
+    }
+
+    .selectServiceType-title {
+        position: absolute;
+        font-size: 35px;
+        top: 0;
+        margin: 0;
+        font-weight: 300;
+    }
+
+    .selectServiceType-text {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        font-size: 40px;
+        font-weight: 200;
+        text-align: center;
+
+    }
+
+    .bolItalic {
+        font-weight: 600;
+    }
+
+    /*----SERVICE TYPE BUTTONS----*/
+
+
+    .serviceTypes {
+        position: relative;
+        top: 100px;
+        flex-flow: column;
+        justify-content: space-around;
+        height: 600px;
+        
+
+
+
+    }
+
+    .basicClean,
+    .deepClean,
+    .movingInOut {
+        position: relative;
+        width: 600px;
+        height: 85px;
+        font-size: 33px;
+        border-radius: 10px;
+        background-color: #F7E5C0;
+    }
+
+    /*----NEXT BUTTON----*/
+
+
+    .nextButtonWrap {
+        position: relative;
+        top: 265px;
+        
+
+    }
+
+    .nextButton {
+        position: relative;
+        font-size: 40px;
+        width: 600px;
+        height: 85px;
+        color: #fff;
         background-color: #E08872;
         border-radius: 10px;
 
