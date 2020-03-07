@@ -11,10 +11,18 @@ $(document).ready(function () {
             right: "500px",
         });
 
+    }
 
+    $(".basicCleanDescrip-button").click(revertBasicClean);
 
+    function revertBasicClean() {
 
-
+        $(".basicCleanWrap").animate({
+            left: "500px",
+        });
+        $(".mainPageWrap").animate({
+            right: "0px",
+        });
 
     }
 
