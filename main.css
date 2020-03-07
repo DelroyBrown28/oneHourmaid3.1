@@ -6,6 +6,7 @@ html {
     width: 100%;
     margin: 0;
     background-color: #F1F1E6;
+    font-family: 'Josefin Sans', sans-serif;
     display: flex;
     flex-flow: column;
 }
@@ -15,16 +16,26 @@ html {
 
     .selectService,
     .numberOfRooms,
-    .timeDate {
+    .timeDate,
+    .selectServiceBlurb,
+    .serviceTypes,
+    .basicClean,
+    .deepClean,
+    .movingInOut,
+    .nextButtonWrap,
+    .nextButton {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
+    /*----PROGRESS TRACKER8----*/
+
     .progressTracker {
         height: 100px;
         width: 100%;
         
+
 
     }
 
@@ -42,7 +53,6 @@ html {
         display: flex;
         height: 50px;
         width: 95px;
-
         position: relative;
         text-align: center;
     }
@@ -51,7 +61,6 @@ html {
         left: 13px;
         bottom: -21px;
         width: 95px;
-
 
     }
 
@@ -66,23 +75,99 @@ html {
         top: 41px;
         width: 95px;
         right: 13px;
-        
+
     }
-
-
 
     .selectService-text {
         position: relative;
         margin-top: 25px;
-        font-family: 'Josefin Sans', sans-serif;
         font-weight: 300;
         font-size: 13px;
     }
-
 
     .fa-dot-circle {
         position: absolute;
         top: 0;
         color: #CEF8F9;
     }
+
+
+    /*----SELECT SERVICE BLURB----*/
+
+    .selectServiceBlurb {
+        position: relative;
+        top: 40px;
+        
+        height: 76px;
+    }
+
+    .selectServiceType-title {
+        position: absolute;
+        font-size: 20px;
+        top: 0;
+        margin: 0;
+        font-weight: 300;
+    }
+
+    .selectServiceType-text {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        font-size: 20px;
+        font-weight: 200;
+        text-align: center;
+
+    }
+
+    .bolItalic {
+        font-weight: 600;
+    }
+
+    /*----SERVICE TYPE BUTTONS----*/
+
+
+    .serviceTypes {
+        position: relative;
+        
+        top: 100px;
+        flex-flow: column;
+        justify-content: space-between;
+        height: 280px;
+
+    }
+
+    .basicClean,
+    .deepClean,
+    .movingInOut {
+        position: relative;
+        width: 260px;
+        height: 58px;
+        font-size: 25px;
+        
+        border-radius: 10px;
+        background-color: #F7E5C0;
+    }
+
+    /*----NEXT BUTTON----*/
+
+
+    .nextButtonWrap {
+        position: relative;
+        top: 300px;
+        
+
+    }
+
+    .nextButton {
+        position: relative;
+        font-size: 25px;
+        width: 250px;
+        height: 40px;
+        
+        background-color: #E08872;
+        border-radius: 10px;
+
+    }
+
+
 }
