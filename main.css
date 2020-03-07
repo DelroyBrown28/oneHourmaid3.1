@@ -21,11 +21,26 @@ html {
 .deepClean,
 .movingInOut,
 .nextButtonWrap,
-.nextButton {
+.nextButton,
+.basicCleanBlurb,
+.basicCleanDescrip-button,
+.basicClean-serviceType {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.selectService,
+.numberOfRooms,
+.timeDate,
+.selectServiceBlurb,
+.serviceTypes,
+.basicClean,
+.deepClean,
+.movingInOut {
+    display: none;
+}
+
 
 /* smartphones----------- */
 
@@ -94,10 +109,9 @@ html {
 
     /*----SELECT SERVICE BLURB----*/
 
-    .selectServiceBlurb {
+    .basicCleanBlurb {
         position: relative;
         top: 40px;
-
         height: 76px;
     }
 
@@ -142,9 +156,75 @@ html {
         width: 260px;
         height: 58px;
         font-size: 25px;
-
         border-radius: 10px;
         background-color: #F7E5C0;
+    }
+
+    /*----BASIC CLEAN OPTIONS----*/
+
+
+    .basicCleanDescrip-button {
+        position: relative;
+        width: 77%;
+        height: 58px;
+        font-size: 25px;
+        border-radius: 10px;
+        background-color: #F7E5C0;
+
+
+    }
+
+    .basicClean-serviceType {
+        position: relative;
+        top: 40px;
+        flex-flow: column;
+        justify-content: space-between;
+        height: 380px;
+
+
+    }
+
+    .cleaningDescription-text {
+        position: absolute;
+        top: 60px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 300;
+
+    }
+
+    .basicClean-title {
+        position: absolute;
+        font-size: 20px;
+        bottom: 100px;
+        margin: 0;
+        font-weight: 300;
+    }
+
+    .basicClean-text {
+        position: absolute;
+        bottom: 45px;
+        margin: 0;
+        font-size: 20px;
+        font-weight: 200;
+        text-align: center;
+
+    }
+
+
+    .inputBox {
+        position: absolute;
+        height: 200px;
+        width: 77%;
+        bottom: 22px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        padding: 18px 0px 0px 18px;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'Josefin Sans', sans-serif;
+
     }
 
     /*----NEXT BUTTON----*/
@@ -152,7 +232,7 @@ html {
 
     .nextButtonWrap {
         position: relative;
-        top: 285px;
+        top: 610px;
 
 
     }
