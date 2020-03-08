@@ -9,11 +9,12 @@ html {
     font-family: 'Josefin Sans', sans-serif;
     display: flex;
     flex-flow: column;
+    overflow: hidden;
 }
 
 .selectService,
 .numberOfRooms,
-.progressTracker,
+.progressTrackerWrap,
 .timeDate,
 .selectServiceBlurb,
 .serviceTypes,
@@ -24,7 +25,11 @@ html {
 .nextButton,
 .basicCleanBlurb,
 .basicCleanDescrip-button,
-.basicClean-serviceType {
+.basicClean-serviceType,
+.selectService-tracker,
+.selectService-tracker,
+.numberOfRooms-tracker,
+.timeDate-tracker {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,61 +71,24 @@ html {
         z-index: 1;
     }
 
-    .progressTracker {
+    .progressTrackerWrap {
         position: relative;
-        height: 100px;
-        width: 100%;
-        
-
-    }
-
-    .trackerBar {
-        position: absolute;
-        border: 1.5px solid #FFB992;
-        top: 40px;
-        width: 270px;
-
-    }
-
-    .selectService,
-    .numberOfRooms,
-    .timeDate {
-        display: flex;
         height: 50px;
-        width: 95px;
-        bottom: 9px;
-        position: absolute;
-        text-align: center;
-    }
-
-    .selectService {
-        left: 11px;
+        width: 100%;
+        justify-content: space-evenly;
 
     }
 
-    .numberOfRooms {
-        width: 80px;
-    }
-
-    .timeDate {
-        width: 95px;
-        right: 11px;
-
-    }
-
-    .progress-text {
+    .selectService-tracker,
+    .numberOfRooms-tracker,
+    .timeDate-tracker {
         position: relative;
-        margin-top: 25px;
-        font-weight: 300;
-        font-size: 13px;
-
+        width: 34%;
+        height: inherit;
+        background-color: #E08872;
+        color: #fff;
     }
 
-    .fa-circle {
-        position: absolute;
-        top: 0;
-        color: #CEF8F9;
-    }
 
 
     /*----SELECT SERVICE BLURB----*/
@@ -129,14 +97,14 @@ html {
     .selectServiceType-title {
         position: absolute;
         font-size: 20px;
-        top: 65px;
+        top: 140px;
         margin: 0;
         font-weight: 300;
     }
 
     .selectServiceType-text {
         position: absolute;
-        top: 95px;
+        top: 170px;
         margin: 0;
         font-size: 20px;
         font-weight: 200;
@@ -179,10 +147,7 @@ html {
     .basicCleanBlurb,
     .basicClean-serviceType,
     .cleaningDescription-text,
-    .basicCleanWrap {
-        
-        
-    }
+    .basicCleanWrap {}
 
     .basicCleanWrap {
         position: absolute;
@@ -190,7 +155,7 @@ html {
         width: 100%;
         top: 150px;
         left: -500px;
-        
+
 
 
     }
