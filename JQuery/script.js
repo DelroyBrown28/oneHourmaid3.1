@@ -22,11 +22,16 @@ $(document).ready(function () {
             height: "80%",
             width: "70%",
         });
+        $(".basicClean-submitButton").animate({
+            opacity: "1",
+            zindex: "1",
+        });
         $(".requirement-Blurb").show();
         $(".selectService-Blurb").hide();
 
         
     };
+
 
     $(".deepCleanButton").click(deepCleanTextBox);
 
@@ -34,6 +39,11 @@ $(document).ready(function () {
         $(".deepCleanButton").animate({
             height: "550px",
         });
+        $(".deepClean-submitButton").animate({
+            opacity: "1",
+            zindex: "1",
+        });
+
         $(".deepClean-inputField").animate({
             opacity: "1",
             height: "80%",
@@ -47,6 +57,11 @@ $(document).ready(function () {
         $(".movingInOutButton").animate({
             height: "550px",
         });
+        $(".movingInOut-submitButton").animate({
+            opacity: "1",
+            zindex: "1",
+        });
+
         $(".movingInOut-inputField").animate({
             opacity: "1",
             height: "80%",

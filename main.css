@@ -36,7 +36,10 @@ html {
     .basicCleanButton,
     .deepCleanButton,
     .movingInOutButton,
-    .nextButton {
+    .nextButton,
+    .basicClean-submitButton,
+    .deepClean-submitButton,
+    .movingInOut-submitButton {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -173,6 +176,21 @@ html {
 
     }
 
+    .basicClean-submitButton,
+    .deepClean-submitButton,
+    .movingInOut-submitButton {
+        position: absolute;
+        bottom: 5%;
+        border-radius: 100px;
+        border: 1px solid #F4B494;
+        background-color: transparent;
+        height: 10%;
+        width: 50%;
+        font-size: 0.7em;
+        opacity: 0;
+
+    }
+
 
     .nextButton {
         position: relative;
@@ -189,5 +207,11 @@ html {
         width: 0%;
     }
 
-}
 
+    /*---HOVERS& SUCH---*/
+
+    .basicClean-submitButton:active {
+        opacity: 0.5;
+    }
+
+}
