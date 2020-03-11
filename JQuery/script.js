@@ -41,9 +41,9 @@ $(document).ready(function () {
         });
     };
 
-    $(".movingInOutButton").click(deepCleanTextBox);
+    $(".movingInOutButton").click(movingInOutTextBox);
 
-    function deepCleanTextBox() {
+    function movingInOutTextBox() {
         $(".movingInOutButton").animate({
             height: "550px",
         });
