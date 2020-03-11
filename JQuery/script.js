@@ -24,6 +24,8 @@ $(document).ready(function () {
         });
         $(".requirement-Blurb").show();
         $(".selectService-Blurb").hide();
+
+        
     };
 
     $(".deepCleanButton").click(deepCleanTextBox);

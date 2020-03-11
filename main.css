@@ -91,6 +91,9 @@ html {
         display: none;
     }
 
+    /*---BUTTONS---*/
+
+
     .buttonsWrap {
         position: relative;
         height: 55%;
@@ -129,19 +132,6 @@ html {
 
     }
 
-    .nextButton {
-        position: relative;
-        height: 10%;
-        top: 4%;
-        font-size: 1.3em;
-        color: #E7E6E0;
-    }
-
-    .animatedUnderline {
-        opacity: 0;
-        width: 0%;
-    }
-
     .basicClean-inputField,
     .deepClean-inputField,
     .movingInOut-inputField {
@@ -162,24 +152,41 @@ html {
         font-size: 0.7em;
         opacity: 0.5;
         text-align: center;
-        
 
-      }
-      
-      :-ms-input-placeholder { 
+
+    }
+
+    :-ms-input-placeholder {
         color: #E7E6E0;
         font-size: 0.7em;
         opacity: 0.5;
         text-align: center;
-        
 
-      }
-      
-      ::placeholder {
+
+    }
+
+    ::placeholder {
         color: #E7E6E0;
         font-size: 0.7em;
         opacity: 0.5;
         text-align: center;
-        
-      }
+
+    }
+
+
+    .nextButton {
+        position: relative;
+        height: 10%;
+        top: 4%;
+        font-size: 1.3em;
+        color: #E7E6E0;
+    }
+
+
+
+    .animatedUnderline {
+        opacity: 0;
+        width: 0%;
+    }
+
 }
