@@ -80,7 +80,9 @@ html {
     }
 
     .selectService-Blurb,
-    .requirement-Blurb {
+    .basicClean-requirementBlurb,
+    .deepClean-requirementBlurb,
+    .movingInOut-requirementBlurb {
         position: absolute;
         bottom: 20%;
         font-weight: 200;
@@ -90,7 +92,9 @@ html {
 
     }
 
-    .requirement-Blurb {
+    .basicClean-requirementBlurb,
+    .deepClean-requirementBlurb,
+    .movingInOut-requirementBlurb {
         display: none;
     }
 
@@ -144,7 +148,9 @@ html {
         background: #495B60;
         padding: 18px 0px 0px 10px;
         outline: none;
-        color: #E7E6E0;
+        color: transparent;
+        text-shadow: 0px 0px 0px #fff;
+        text-shadow: 0px 0px 0px 0px blue;
         font-size: 1.1em;
         font-family: 'Josefin Sans', sans-serif;
 
@@ -153,8 +159,10 @@ html {
     ::-webkit-input-placeholder {
         color: #E7E6E0;
         font-size: 0.7em;
-        opacity: 0.5;
         text-align: center;
+        opacity: 0.6;
+        line-height: 200%;
+        text-transform: uppercase;
 
 
     }
@@ -162,8 +170,10 @@ html {
     :-ms-input-placeholder {
         color: #E7E6E0;
         font-size: 0.7em;
-        opacity: 0.5;
         text-align: center;
+        opacity: 0.6;
+        line-height: 200%;
+        text-transform: uppercase;
 
 
     }
@@ -171,8 +181,10 @@ html {
     ::placeholder {
         color: #E7E6E0;
         font-size: 0.7em;
-        opacity: 0.5;
         text-align: center;
+        opacity: 0.6;
+        line-height: 200%;
+        text-transform: uppercase;
 
     }
 

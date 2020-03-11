@@ -16,6 +16,7 @@ $(document).ready(function () {
     function basicCleanTextBox() {
         $(".basicCleanButton").animate({
             height: "550px",
+            top: "10%",
         });
         $(".basicClean-inputField").animate({
             opacity: "1",
@@ -26,10 +27,19 @@ $(document).ready(function () {
             opacity: "1",
             zindex: "1",
         });
-        $(".requirement-Blurb").show();
-        $(".selectService-Blurb").hide();
+        $(".deepCleanButton").animate({
+            opacity: "0",
+        });
+        $(".movingInOutButton").animate({
+            opacity: "0",
+        });
 
-        
+        $(".basicClean-requirementBlurb").slideToggle();
+        $(".selectService-Blurb").slideToggle();
+        $(".selectService-Blurb").unbind(basicCleanTextBox);
+
+
+
     };
 
 
@@ -49,6 +59,19 @@ $(document).ready(function () {
             height: "80%",
             width: "70%",
         });
+        $(".basicCleanButton").animate({
+            opacity: "0",
+        });
+        $(".movingInOutButton").animate({
+            opacity: "0",
+        });
+        $(".deepClean-requirementBlurb").slideToggle();
+        $(".selectService-Blurb").slideToggle();
+        $(".selectService-Blurb").unbind(deepCleanTextBox);
+
+
+
+
     };
 
     $(".movingInOutButton").click(movingInOutTextBox);
@@ -56,6 +79,7 @@ $(document).ready(function () {
     function movingInOutTextBox() {
         $(".movingInOutButton").animate({
             height: "550px",
+            bottom: "10%"
         });
         $(".movingInOut-submitButton").animate({
             opacity: "1",
@@ -67,6 +91,20 @@ $(document).ready(function () {
             height: "80%",
             width: "70%",
         });
+        $(".deepCleanButton").animate({
+            opacity: "0",
+        });
+        $(".basicCleanButton").animate({
+            opacity: "0",
+        });
+
+        $(".movingInOut-requirementBlurb").slideToggle();
+        $(".selectService-Blurb").slideToggle();
+        $(".selectService-Title").delay(300).animate({
+            top: "3%",
+        });
+
+
     };
 
 
