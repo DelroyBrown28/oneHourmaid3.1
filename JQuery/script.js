@@ -1,38 +1,56 @@
 $(document).ready(function () {
 
+    $(".nextButton").click(animateUnderline);
 
-    $(".basicClean").click(showBasicClean);
+    function animateUnderline() {
 
-    function showBasicClean() {
-        $(".basicCleanWrap").animate({
-            left: "0px",
+        $(".animatedUnderline").animate({
+            width: "15%",
+            opacity: "1",
         });
-        $(".mainPageWrap").animate({
-            right: "500px",
+    };
+
+
+    $(".basicCleanButton").click(basicCleanTextBox);
+
+    function basicCleanTextBox() {
+        $(".basicCleanButton").animate({
+            height: "550px",
         });
-
-    }
-
-    $(".basicCleanDescrip-button").click(revertBasicClean);
-
-    function revertBasicClean() {
-
-        $(".basicCleanWrap").animate({
-            left: "500px",
+        $(".basicClean-inputField").animate({
+            opacity: "1",
+            height: "80%",
+            width: "70%",
         });
-        $(".mainPageWrap").animate({
-            right: "0px",
+        $(".requirement-Blurb").show();
+        $(".selectService-Blurb").hide();
+    };
+
+    $(".deepCleanButton").click(deepCleanTextBox);
+
+    function deepCleanTextBox() {
+        $(".deepCleanButton").animate({
+            height: "550px",
         });
-
-    }
-
-    $(function () {
-        $("#progressbar").progressbar({
-            value: 37
+        $(".deepClean-inputField").animate({
+            opacity: "1",
+            height: "80%",
+            width: "70%",
         });
-    });
+    };
 
+    $(".movingInOutButton").click(deepCleanTextBox);
 
+    function deepCleanTextBox() {
+        $(".movingInOutButton").animate({
+            height: "550px",
+        });
+        $(".movingInOut-inputField").animate({
+            opacity: "1",
+            height: "80%",
+            width: "70%",
+        });
+    };
 
 
 
