@@ -1,15 +1,5 @@
 $(document).ready(function () {
 
-    $(".nextButton").click(animateUnderline);
-
-    function animateUnderline() {
-
-        $(".animatedUnderline").animate({
-            width: "15%",
-            opacity: "1",
-        });
-    };
-
 
     $(".basicCleanButton").click(basicCleanTextBox);
 
@@ -34,14 +24,14 @@ $(document).ready(function () {
             opacity: "0",
         });
 
-        $(".basicClean-requirementBlurb").slideToggle();
-        $(".selectService-Blurb").slideToggle();
+        $(".basicClean-requirementBlurb").toggle();
+        $(".selectService-Blurb").toggle();
         $(".selectService-Blurb").unbind(basicCleanTextBox);
-
-
+        $(".basicCleanButton").unbind(basicCleanTextBox);
 
     };
-
+        
+    
 
     $(".deepCleanButton").click(deepCleanTextBox);
 
@@ -65,8 +55,8 @@ $(document).ready(function () {
         $(".movingInOutButton").animate({
             opacity: "0",
         });
-        $(".deepClean-requirementBlurb").slideToggle();
-        $(".selectService-Blurb").slideToggle();
+        $(".deepClean-requirementBlurb").toggle();
+        $(".selectService-Blurb").toggle();
         $(".selectService-Blurb").unbind(deepCleanTextBox);
 
 
@@ -98,14 +88,26 @@ $(document).ready(function () {
             opacity: "0",
         });
 
-        $(".movingInOut-requirementBlurb").slideToggle();
-        $(".selectService-Blurb").slideToggle();
+        $(".movingInOut-requirementBlurb").toggle();
+        $(".selectService-Blurb").toggle();
         $(".selectService-Title").delay(300).animate({
             top: "3%",
         });
 
 
     };
+
+    $(".nextButton").click(animateUnderline);
+
+    function animateUnderline() {
+
+        $(".animatedUnderline").animate({
+            width: "15%",
+            opacity: "1",
+        });
+    };
+
+
 
 
 
