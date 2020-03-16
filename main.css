@@ -1235,7 +1235,7 @@ html {
         position: relative;
         background-color: transparent;
         height: 75px;
-        width: 40%;
+        width: 25%;
         color: #E7E6E0;
         font-size: 2em;
         cursor: pointer;
@@ -1345,5 +1345,10 @@ html {
     .basicClean-submitButton:active {
         opacity: 0.5;
     }
+
+    .basicClean-submitButton:hover {
+        opacity: 0.5;
+    }
+
 
 }
