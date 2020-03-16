@@ -2,7 +2,6 @@ $(document).ready(function () {
 
     //expands BASIC CLEAN button
     $(".basicCleanButton").click(basicCleanTextBox);
-
     function basicCleanTextBox() {
         $(".basicCleanButton").animate({
             height: "550px",
@@ -34,7 +33,6 @@ $(document).ready(function () {
 
     //expands DEEP CLEAN button
     $(".deepCleanButton").click(deepCleanTextBox);
-
     function deepCleanTextBox() {
         $(".deepCleanButton").animate({
             height: "550px",
@@ -67,7 +65,6 @@ $(document).ready(function () {
 
     //expands MOVING IN/OUT button
     $(".movingInOutButton").click(movingInOutTextBox);
-
     function movingInOutTextBox() {
         $(".movingInOutButton").animate({
             height: "550px",
@@ -101,7 +98,6 @@ $(document).ready(function () {
 
 
     $(".nextButton").click(animateUnderline);
-
     function animateUnderline() {
 
         $(".animatedUnderline").animate({
