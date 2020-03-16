@@ -1115,3 +1115,225 @@ html {
     }
 
 }
+
+@media only screen and (min-device-width : 1224px) and (max-device-width : 1920px) {
+
+
+    body,
+    html {
+        width: 1920px;
+        height: 100%;
+        overflow: hidden;
+    }
+
+
+    .selectionWrap,
+    .selectService,
+    .numberOfRooms,
+    .movingInOut,
+    .serviceTypeTextWrap,
+    .buttonsWrap,
+    .basicCleanButton,
+    .deepCleanButton,
+    .movingInOutButton,
+    .nextButton,
+    .basicClean-submitButton,
+    .deepClean-submitButton,
+    .movingInOut-submitButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    /*---TOP SERVICE CONTENTS---*/
+
+    .selectionWrap {
+        position: relative;
+        color: #fff;
+        height: 10%;
+        font-weight: 100;
+        font-size: 0.9em;
+        justify-content: space-around;
+
+    }
+
+    .selectService,
+    .numberOfRooms,
+    .movingInOut {
+        font-size: 2em;
+    }
+
+
+    /*---SELECT SERVICE TITLE AND BLURB---*/
+
+    .serviceTypeTextWrap {
+        position: relative;
+        top: 3%;
+        height: 18%;
+        color: #E7E6E0;
+
+    }
+
+    .selectService-Title {
+        position: absolute;
+        top: 10%;
+        font-weight: 200;
+        font-size: 2.2em;
+        margin: 0;
+
+    }
+
+    .selectService-Blurb,
+    .basicClean-requirementBlurb,
+    .deepClean-requirementBlurb,
+    .movingInOut-requirementBlurb {
+        position: absolute;
+        bottom: 20%;
+        font-weight: 200;
+        font-size: 2.3em;
+        text-align: center;
+        margin: 0;
+
+    }
+
+    .basicClean-requirementBlurb,
+    .deepClean-requirementBlurb,
+    .movingInOut-requirementBlurb {
+        display: none;
+    }
+
+    .movingInOut-requirementBlurb {
+        width: 80%;
+    }
+
+    /*---BUTTONS---*/
+
+
+    .buttonsWrap {
+        position: relative;
+        height: 55%;
+        top: 3%;
+        flex-flow: column;
+        justify-content: space-around;
+    }
+
+
+    .basicCleanButton,
+    .deepCleanButton,
+    .movingInOutButton {
+        position: relative;
+        background-color: transparent;
+        height: 75px;
+        width: 40%;
+        color: #E7E6E0;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    .basicCleanButton::before,
+    .deepCleanButton::before,
+    .movingInOutButton::before {
+        background: none;
+        border: 1px solid #F4B494;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        right: 3px;
+        bottom: 3px;
+        pointer-events: none;
+
+    }
+
+    .basicClean-inputField,
+    .deepClean-inputField,
+    .movingInOut-inputField {
+        opacity: 0;
+        position: absolute;
+        border: none;
+        background: #495B60;
+        padding: 18px 0px 0px 10px;
+        outline: none;
+        color: transparent;
+        text-shadow: 0px 0px 0px #fff;
+        text-shadow: 0px 0px 0px 0px blue;
+        font-size: 1.1em;
+        font-family: 'Josefin Sans', sans-serif;
+        resize: none;
+
+    }
+
+    ::-webkit-input-placeholder {
+        color: #E7E6E0;
+        font-size: 0.8em;
+        text-align: center;
+        opacity: 0.4;
+        line-height: 200%;
+        text-transform: uppercase;
+
+
+    }
+
+    :-ms-input-placeholder {
+        color: #E7E6E0;
+        font-size: 0.8em;
+        text-align: center;
+        opacity: 0.4;
+        line-height: 200%;
+        text-transform: uppercase;
+
+
+    }
+
+    ::placeholder {
+        color: #E7E6E0;
+        font-size: 0.8em;
+        text-align: center;
+        opacity: 0.4;
+        line-height: 200%;
+        text-transform: uppercase;
+
+    }
+
+    .basicClean-submitButton,
+    .deepClean-submitButton,
+    .movingInOut-submitButton {
+        position: absolute;
+        bottom: 5%;
+        border-radius: 100px;
+        border: 1px solid #F4B494;
+        background-color: transparent;
+        height: 10%;
+        width: 50%;
+        font-size: 1em;
+        opacity: 0;
+
+    }
+
+
+    .nextButton {
+        position: relative;
+        height: 10%;
+        top: 4%;
+        font-size: 2.3em;
+        color: #E7E6E0;
+    }
+
+
+
+    .animatedUnderline {
+        opacity: 0;
+        width: 0%;
+    }
+
+
+    /*---HOVERS& SUCH---*/
+
+    .basicClean-submitButton:active {
+        opacity: 0.5;
+    }
+
+}
