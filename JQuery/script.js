@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-
+    //expands BASIC CLEAN button
     $(".basicCleanButton").click(basicCleanTextBox);
 
     function basicCleanTextBox() {
@@ -23,53 +23,16 @@ $(document).ready(function () {
         $(".movingInOutButton").animate({
             opacity: "0",
         });
-
-        $(".basicClean-requirementBlurb").toggle();
-        $(".selectService-Blurb").toggle();
+        $(".selectService-Title").hide();
+        $(".basicClean-requirementBlurb").fadeIn();
+        $(".selectService-Blurb").fadeOut();
         $(".selectService-Blurb").unbind(basicCleanTextBox);
         $(".basicClean-requirementBlurb").unbind(basicCleanTextBox);
         $(".basicCleanButton").unbind(basicCleanTextBox);
 
     };
 
-    $(".basicClean-submitButton").click(revertBasicClean);
-
-    function revertBasicClean() {
-        $(".basicCleanButton").animate({
-            height: "50px",
-            width: "70%",
-            opacity: "1",
-        });
-        $(".basicClean-inputField").animate({
-            display: "none",
-        });
-
-        $(".basicCleanButton").unbind(revertBasicClean);
-
-    }
-
-    $(".deepClean-submitButton").click(revertFromBasicClean);
-
-    function revertFromBasicClean() {
-        $(".basicCleanButton").addClass("basicCleanButton");
-        $(".basicClean-inputField").addClass(".basicClean-inputField");
-        $(".selectService-Blurb").addClass(".basicClean-inputField");
-        $(".basicClean-requirementBlurb").css("display", "none");
-        $(".deepCleanButton").addClass("deepCleanButton");
-        $(".deepCleanButton").animate({
-            opacity: "1",
-        });
-        $(".movingInOutButton").animate({
-            opacity: "1",
-        });
-
-
-
-
-    }
-
-
-
+    //expands DEEP CLEAN button
     $(".deepCleanButton").click(deepCleanTextBox);
 
     function deepCleanTextBox() {
@@ -92,8 +55,9 @@ $(document).ready(function () {
         $(".movingInOutButton").animate({
             opacity: "0",
         });
-        $(".deepClean-requirementBlurb").toggle();
-        $(".selectService-Blurb").toggle();
+        $(".selectService-Title").hide();
+        $(".deepClean-requirementBlurb").fadeIn();
+        $(".selectService-Blurb").fadeOut();
         $(".selectService-Blurb").unbind(deepCleanTextBox);
 
 
@@ -101,6 +65,7 @@ $(document).ready(function () {
 
     };
 
+    //expands MOVING IN/OUT button
     $(".movingInOutButton").click(movingInOutTextBox);
 
     function movingInOutTextBox() {
@@ -124,15 +89,16 @@ $(document).ready(function () {
         $(".basicCleanButton").animate({
             opacity: "0",
         });
-
-        $(".movingInOut-requirementBlurb").toggle();
-        $(".selectService-Blurb").toggle();
+        $(".selectService-Title").hide();
+        $(".movingInOut-requirementBlurb").fadeIn();
+        $(".selectService-Blurb").fadeOut();
         $(".selectService-Title").delay(300).animate({
             top: "3%",
         });
 
 
     };
+
 
     $(".nextButton").click(animateUnderline);
 

@@ -206,6 +206,7 @@ html {
         width: 50%;
         font-size: 0.7em;
         opacity: 0;
+        cursor: pointer;
 
     }
 
@@ -423,6 +424,8 @@ html {
         width: 50%;
         font-size: 0.7em;
         opacity: 0;
+        cursor: pointer;
+
 
     }
 
@@ -640,6 +643,8 @@ html {
         width: 50%;
         font-size: 0.7em;
         opacity: 0;
+        cursor: pointer;
+
 
     }
 
@@ -865,6 +870,8 @@ html {
         width: 50%;
         font-size: 1em;
         opacity: 0;
+        cursor: pointer;
+
 
     }
 
@@ -1088,6 +1095,8 @@ html {
         width: 50%;
         font-size: 1em;
         opacity: 0;
+        cursor: pointer;
+
 
     }
 
@@ -1308,8 +1317,9 @@ html {
         background-color: transparent;
         height: 10%;
         width: 50%;
-        font-size: 1em;
+        font-size: 0.7em;
         opacity: 0;
+        cursor: pointer;
 
     }
 
