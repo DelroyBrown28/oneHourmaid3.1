@@ -27,11 +27,48 @@ $(document).ready(function () {
         $(".basicClean-requirementBlurb").toggle();
         $(".selectService-Blurb").toggle();
         $(".selectService-Blurb").unbind(basicCleanTextBox);
+        $(".basicClean-requirementBlurb").unbind(basicCleanTextBox);
         $(".basicCleanButton").unbind(basicCleanTextBox);
 
     };
-        
-    
+
+    $(".basicClean-submitButton").click(revertBasicClean);
+
+    function revertBasicClean() {
+        $(".basicCleanButton").animate({
+            height: "50px",
+            width: "70%",
+            opacity: "1",
+        });
+        $(".basicClean-inputField").animate({
+            display: "none",
+        });
+
+        $(".basicCleanButton").unbind(revertBasicClean);
+
+    }
+
+    $(".deepClean-submitButton").click(revertFromBasicClean);
+
+    function revertFromBasicClean() {
+        $(".basicCleanButton").addClass("basicCleanButton");
+        $(".basicClean-inputField").addClass(".basicClean-inputField");
+        $(".selectService-Blurb").addClass(".basicClean-inputField");
+        $(".basicClean-requirementBlurb").css("display", "none");
+        $(".deepCleanButton").addClass("deepCleanButton");
+        $(".deepCleanButton").animate({
+            opacity: "1",
+        });
+        $(".movingInOutButton").animate({
+            opacity: "1",
+        });
+
+
+
+
+    }
+
+
 
     $(".deepCleanButton").click(deepCleanTextBox);
 
