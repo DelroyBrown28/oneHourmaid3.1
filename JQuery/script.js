@@ -31,7 +31,6 @@ $(document).ready(function () {
 
     };
 
-
     //expands DEEP CLEAN button
     $(".deepCleanButton").click(deepCleanTextBox);
     function deepCleanTextBox() {
@@ -106,10 +105,6 @@ $(document).ready(function () {
             opacity: "1",
         });
     };
-
-
-
-
 
 
 });

@@ -1125,6 +1125,8 @@ html {
 
 }
 
+/*--desktop-----*/
+
 @media only screen and (min-device-width : 1224px) and (max-device-width : 1920px) {
 
 
@@ -1214,7 +1216,7 @@ html {
     }
 
     .movingInOut-requirementBlurb {
-        width: 80%;
+        width: 40%;
     }
 
     /*---BUTTONS---*/
@@ -1277,35 +1279,32 @@ html {
 
     ::-webkit-input-placeholder {
         color: #E7E6E0;
-        font-size: 0.8em;
+        font-size: 0.5em;
         text-align: center;
         opacity: 0.4;
         line-height: 200%;
         text-transform: uppercase;
-
 
     }
 
     :-ms-input-placeholder {
         color: #E7E6E0;
-        font-size: 0.8em;
+        font-size: 0.5em;
         text-align: center;
         opacity: 0.4;
         line-height: 200%;
         text-transform: uppercase;
-
 
     }
 
     ::placeholder {
         color: #E7E6E0;
-        font-size: 0.8em;
+        font-size: 0.5em;
         text-align: center;
         opacity: 0.4;
         line-height: 200%;
         text-transform: uppercase;
-
-    }
+}
 
     .basicClean-submitButton,
     .deepClean-submitButton,
