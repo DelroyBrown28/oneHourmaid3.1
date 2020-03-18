@@ -100,28 +100,22 @@ $(document).ready(function () {
     };
 
 
-    $(".nextButton").click(animateUnderline);
-
-    function animateUnderline() {
-
-        $(".animatedUnderline").animate({
-            width: "15%",
-            opacity: "1",
-        });
-    };
-
-    // ADDS/REMOVES ROOMS FOR NUMBER OF ROOMS
-    let addRoom = document.querySelector(".addRoom");
-    let subtractRoom = document.querySelector(".subtractRoom");
-    let input = document.querySelector(".roomsAmmount");
-
-    addRoom.addEventListener('click', () => {
+    let addRoom = document.querySelectorAll(".addRoom");
+    let subtractRoom = document.querySelectorAll(".subtractRoom");
+    
+    addRoom.forEach((el)=>{
+      el.addEventListener('click', (e) => {
+        let input = e.target.closest('.bedroomsButton,.bathroomsButton').querySelector(".roomsAmmount");
         input.value = parseInt(input.value) + 1;
-
+      });
     });
-    subtractRoom.addEventListener('click', () => {
+    
+    subtractRoom.forEach((el)=>{
+      el.addEventListener('click', (e) => {
+        let input = e.target.closest('.bedroomsButton,.bathroomsButton').querySelector(".roomsAmmount");
         input.value = parseInt(input.value) - 1;
-
+      });
     });
 
 });
+
