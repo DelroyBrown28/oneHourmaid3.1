@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     //expands BASIC CLEAN button
     $(".basicCleanButton").click(basicCleanTextBox);
+
     function basicCleanTextBox() {
         $(".basicCleanButton").animate({
             height: "550px",
@@ -33,6 +34,7 @@ $(document).ready(function () {
 
     //expands DEEP CLEAN button
     $(".deepCleanButton").click(deepCleanTextBox);
+
     function deepCleanTextBox() {
         $(".deepCleanButton").animate({
             height: "550px",
@@ -65,6 +67,7 @@ $(document).ready(function () {
 
     //expands MOVING IN/OUT button
     $(".movingInOutButton").click(movingInOutTextBox);
+
     function movingInOutTextBox() {
         $(".movingInOutButton").animate({
             height: "550px",
@@ -98,6 +101,7 @@ $(document).ready(function () {
 
 
     $(".nextButton").click(animateUnderline);
+
     function animateUnderline() {
 
         $(".animatedUnderline").animate({
@@ -106,5 +110,18 @@ $(document).ready(function () {
         });
     };
 
+    // ADDS/REMOVES ROOMS FOR NUMBER OF ROOMS
+    let addRoom = document.querySelector(".addRoom");
+    let subtractRoom = document.querySelector(".subtractRoom");
+    let input = document.querySelector("input");
+
+    addRoom.addEventListener('click', () => {
+        input.value = parseInt(input.value) + 1;
+
+    });
+    subtractRoom.addEventListener('click', () => {
+        input.value = parseInt(input.value) - 1;
+
+    });
 
 });

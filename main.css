@@ -290,6 +290,43 @@ html {
         color: #fff;
     }
 
+    .addRoom,
+    .subtractRoom {
+        position: absolute;
+        font-size: 1.3em;
+        width: 50%;
+        height: 45px;
+        z-index: 1;
+        display: flex;
+
+    }
+
+    .addRoom {
+        position: absolute;
+        left: 0;
+    }
+
+    .subtractRoom {
+        position: absolute;
+        right: 0;
+    }
+
+    .plusOne,
+    .subtractOne {
+        position: absolute;
+        align-self: center;
+
+    }
+
+    .plusOne {
+        left: 10%;
+        
+    }
+
+    .subtractOne {
+        right: 14%;
+    }
+
 
     /*---HOVERS & SUCH---*/
 
