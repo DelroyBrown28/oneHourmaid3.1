@@ -39,7 +39,10 @@ html {
     .nextButton,
     .basicClean-submitButton,
     .deepClean-submitButton,
-    .movingInOut-submitButton {
+    .movingInOut-submitButton,
+    .bedroomsButton,
+    .bathroomsButton,
+    .kitchensButton {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -101,6 +104,7 @@ html {
     .movingInOut-requirementBlurb {
         width: 80%;
     }
+
 
     /*---BUTTONS---*/
 
@@ -226,11 +230,74 @@ html {
     }
 
 
-    /*---HOVERS& SUCH---*/
+    /*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
+
+
+    .numberOfRooms-Blurb {
+        position: absolute;
+        bottom: 30%;
+        font-weight: 200;
+        font-size: 1.1em;
+        text-align: center;
+        margin: 0;
+
+    }
+
+    /*---BUTTONS---*/
+
+
+    .bedroomsButton,
+    .bathroomsButton,
+    .kitchensButton {
+        position: relative;
+        background-color: transparent;
+        height: 50px;
+        width: 50%;
+        transform: translateX(-10%);
+        border: 1px solid #F4B494;
+        color: #E7E6E0;
+        font-size: 1.3em;
+
+    }
+
+    .bedroomsButton::before,
+    .bathroomsButton::before,
+    .kitchensButton::before {
+        background: none;
+        border: 1px solid #F4B494;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        right: 3px;
+        bottom: 3px;
+        pointer-events: none;
+
+    }
+
+    #roomsAmmount {
+        position: absolute;
+        width: 50px;
+        height: 45px;
+        right: -60px;
+        border: none;
+        border-bottom: 1px solid #F4B494;
+        outline: none;
+        font-size: 1.8em;
+        text-align: center;
+        background-color: transparent;
+        color: #fff;
+    }
+
+
+    /*---HOVERS & SUCH---*/
 
     .basicClean-submitButton:active {
         opacity: 0.5;
     }
+
+
 
 }
 
@@ -1166,7 +1233,7 @@ html {
         font-weight: 100;
         font-size: 0.9em;
         justify-content: space-around;
-        
+
 
     }
 
@@ -1304,7 +1371,7 @@ html {
         opacity: 0.4;
         line-height: 200%;
         text-transform: uppercase;
-}
+    }
 
     .basicClean-submitButton,
     .deepClean-submitButton,
