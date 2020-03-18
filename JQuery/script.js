@@ -113,7 +113,7 @@ $(document).ready(function () {
     // ADDS/REMOVES ROOMS FOR NUMBER OF ROOMS
     let addRoom = document.querySelector(".addRoom");
     let subtractRoom = document.querySelector(".subtractRoom");
-    let input = document.querySelector("input");
+    let input = document.querySelector(".roomsAmmount");
 
     addRoom.addEventListener('click', () => {
         input.value = parseInt(input.value) + 1;
