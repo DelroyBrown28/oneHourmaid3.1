@@ -27,6 +27,10 @@ html {
         overflow: hidden;
     }
 
+    .buttonsWrap {
+        display: none;
+    }
+
 
     .selectionWrap,
     .selectService,
@@ -1167,13 +1171,14 @@ html {
         font-weight: 100;
         font-size: 0.9em;
         justify-content: space-around;
+        
 
     }
 
     .selectService,
     .numberOfRooms,
     .movingInOut {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
 
