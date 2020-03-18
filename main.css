@@ -27,11 +27,6 @@ html {
         overflow: hidden;
     }
 
-    .buttonsWrap {
-        display: none;
-    }
-
-
     .selectionWrap,
     .selectService,
     .numberOfRooms,
