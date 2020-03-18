@@ -57,33 +57,6 @@ a {
 
     }
 
-    .tapToAddRoomPopUp,
-    .typeInBoxPopUp {
-        position: absolute;
-        height: 40px;
-        animation-name: overlay;
-        display: none;
-        animation-duration: 7s;
-        animation-delay: 2s;
-
-    }
-
-    .tapToAddRoomPopUp {
-        top: 28%;
-        left: 7%;
-        z-index: 1;
-
-    }
-
-    .typeInBoxPopUp {
-        right: 20%;
-        top: 63%;
-        z-index: 1;
-
-    }
-
-
-
 
 
     /*---TOP SERVICE CONTENTS---*/
@@ -277,6 +250,33 @@ a {
         font-size: 1.1em;
         text-align: center;
         margin: 0;
+
+    }
+
+    /*---POP UP INFO---*/
+
+    .tapToAddRoomPopUp,
+    .typeInBoxPopUp {
+        position: absolute;
+        height: 40px;
+        animation-name: overlay;
+        display: none;
+        animation-duration: 7s;
+        animation-delay: 2s;
+
+    }
+
+    .tapToAddRoomPopUp {
+        top: 28%;
+        left: 7%;
+        z-index: 1;
+
+    }
+
+    .typeInBoxPopUp {
+        right: 20%;
+        top: 63%;
+        z-index: 1;
 
     }
 
@@ -581,6 +581,32 @@ a {
 
     /*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
 
+    /*---POP UP INFO---*/
+
+    .tapToAddRoomPopUp,
+    .typeInBoxPopUp {
+        position: absolute;
+        height: 50px;
+        animation-name: overlay;
+        display: none;
+        animation-duration: 7s;
+        animation-delay: 2s;
+
+    }
+
+    .tapToAddRoomPopUp {
+        top: 30%;
+        left: 7%;
+        z-index: 1;
+
+    }
+
+    .typeInBoxPopUp {
+        right: 25%;
+        top: 60%;
+        z-index: 1;
+
+    }
 
     .numberOfRooms-Blurb {
         position: absolute;
@@ -891,12 +917,34 @@ a {
 
 
 
-    .animatedUnderline {
-        opacity: 0;
-        width: 0%;
+    /*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
+
+    /*---POP UP INFO---*/
+
+    .tapToAddRoomPopUp,
+    .typeInBoxPopUp {
+        position: absolute;
+        height: 50px;
+        animation-name: overlay;
+        display: none;
+        animation-duration: 7s;
+        animation-delay: 2s;
+
     }
 
+    .tapToAddRoomPopUp {
+        top: 28%;
+        left: 7%;
+        z-index: 1;
 
+    }
+
+    .typeInBoxPopUp {
+        right: 25%;
+        top: 63%;
+        z-index: 1;
+
+    }
     /*---HOVERS& SUCH---*/
 
     .basicClean-submitButton:active {
@@ -1004,7 +1052,7 @@ a {
 
     .buttonsWrap {
         position: relative;
-        height: 55%;
+        height: 50%;
         top: 3%;
         flex-flow: column;
         justify-content: space-around;
@@ -1118,11 +1166,127 @@ a {
 
 
 
-    .animatedUnderline {
-        opacity: 0;
-        width: 0%;
+    /*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
+
+    /*---POP UP INFO---*/
+
+    .tapToAddRoomPopUp,
+    .typeInBoxPopUp {
+        position: absolute;
+        height: 65px;
+        animation-name: overlay;
+        display: none;
+        animation-duration: 7s;
+        animation-delay: 2s;
+
     }
 
+    .tapToAddRoomPopUp {
+        top: 29%;
+        left: 7%;
+        z-index: 1;
+
+    }
+
+    .typeInBoxPopUp {
+        right: 27%;
+        top: 59%;
+        z-index: 1;
+
+    }
+
+    .numberOfRooms-Blurb {
+        position: absolute;
+        bottom: 30%;
+        font-weight: 200;
+        font-size: 1.7em;
+        text-align: center;
+        margin: 0;
+
+    }
+
+    /*---BUTTONS---*/
+
+
+    .bedroomsButton,
+    .bathroomsButton,
+    .kitchensButton {
+        position: relative;
+        background-color: transparent;
+        height: 60px;
+        width: 50%;
+        transform: translateX(-10%);
+        border: 1px solid #F4B494;
+        color: #E7E6E0;
+        font-size: 1.5em;
+
+    }
+
+    .bedroomsButton::before,
+    .bathroomsButton::before,
+    .kitchensButton::before {
+        background: none;
+        border: 1px solid #F4B494;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        right: 3px;
+        bottom: 3px;
+        pointer-events: none;
+
+    }
+
+    .roomsAmount {
+        position: absolute;
+        width: 50px;
+        height: 45px;
+        right: -60px;
+        border: none;
+        border-bottom: 1px solid #F4B494;
+        outline: none;
+        font-size: 1.4em;
+        text-align: center;
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .addRoom,
+    .subtractRoom {
+        position: absolute;
+        font-size: 1.5em;
+        width: 50%;
+        height: 45px;
+        z-index: 1;
+        display: flex;
+
+    }
+
+    .addRoom {
+        position: absolute;
+        left: 0;
+    }
+
+    .subtractRoom {
+        position: absolute;
+        right: 0;
+    }
+
+    .plusOne,
+    .subtractOne {
+        position: absolute;
+        align-self: center;
+
+    }
+
+    .plusOne {
+        left: 10%;
+    }
+
+    .subtractOne {
+        right: 14%;
+    }
 
     /*---HOVERS& SUCH---*/
 
@@ -1343,11 +1507,127 @@ a {
 
 
 
-    .animatedUnderline {
-        opacity: 0;
-        width: 0%;
+  /*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
+
+    /*---POP UP INFO---*/
+
+    .tapToAddRoomPopUp,
+    .typeInBoxPopUp {
+        position: absolute;
+        height: 65px;
+        animation-name: overlay;
+        display: none;
+        animation-duration: 7s;
+        animation-delay: 2s;
+
     }
 
+    .tapToAddRoomPopUp {
+        top: 29%;
+        left: 7%;
+        z-index: 1;
+
+    }
+
+    .typeInBoxPopUp {
+        right: 27%;
+        top: 59%;
+        z-index: 1;
+
+    }
+
+    .numberOfRooms-Blurb {
+        position: absolute;
+        bottom: 30%;
+        font-weight: 200;
+        font-size: 2.5em;
+        text-align: center;
+        margin: 0;
+
+    }
+
+    /*---BUTTONS---*/
+
+
+    .bedroomsButton,
+    .bathroomsButton,
+    .kitchensButton {
+        position: relative;
+        background-color: transparent;
+        height: 90px;
+        width: 55%;
+        transform: translateX(-5%);
+        border: 1px solid #F4B494;
+        color: #E7E6E0;
+        font-size: 2em;
+
+    }
+
+    .bedroomsButton::before,
+    .bathroomsButton::before,
+    .kitchensButton::before {
+        background: none;
+        border: 1px solid #F4B494;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        right: 3px;
+        bottom: 3px;
+        pointer-events: none;
+
+    }
+
+    .roomsAmount {
+        position: absolute;
+        width: 65px;
+        height: 45px;
+        right: -80px;
+        border-bottom: 1px solid #F4B494;
+        bottom: 0;
+        outline: none;
+        font-size: 1.4em;
+        text-align: center;
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .addRoom,
+    .subtractRoom {
+        position: absolute;
+        font-size: 1.5em;
+        width: 50%;
+        height: 45px;
+        z-index: 1;
+        display: flex;
+
+    }
+
+    .addRoom {
+        position: absolute;
+        left: 0;
+    }
+
+    .subtractRoom {
+        position: absolute;
+        right: 0;
+    }
+
+    .plusOne,
+    .subtractOne {
+        position: absolute;
+        align-self: center;
+
+    }
+
+    .plusOne {
+        left: 10%;
+    }
+
+    .subtractOne {
+        right: 14%;
+    }
 
     /*---HOVERS& SUCH---*/
 

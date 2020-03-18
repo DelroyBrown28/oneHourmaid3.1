@@ -103,7 +103,6 @@ $(document).ready(function () {
 
     //DISPLAYS tap to add MESSAGE WHEN HOVERED
     $(".bedroomsButton").mouseenter(showTapToAddPopUp);
-
     function showTapToAddPopUp() {
         $(".tapToAddRoomPopUp").fadeIn();
         $(".typeInBoxPopUp").fadeIn(800);
@@ -111,7 +110,6 @@ $(document).ready(function () {
     
 
     $(".bedroomsButton").mouseleave(hideTapToAddPopUp);
-
     function hideTapToAddPopUp() {
         $(".tapToAddRoomPopUp").fadeOut(800);
         $(".typeInBoxPopUp").fadeOut();
