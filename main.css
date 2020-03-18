@@ -57,16 +57,34 @@ a {
 
     }
 
-    .tapToAddRooms {
+    .tapToAddRoomPopUp,
+    .typeInBoxPopUp {
         position: absolute;
-        text-align: center;
-        top: 25%;
-        left: 7%;
-        font-size: 0.8em;
-        color: #fff;
-        font-family: 'Shadows Into Light Two', cursive;
-        font-weight: lighter;
+        height: 40px;
+        animation-name: overlay;
+        display: none;
+        animation-duration: 7s;
+        animation-delay: 2s;
+
     }
+
+    .tapToAddRoomPopUp {
+        top: 28%;
+        left: 7%;
+        z-index: 1;
+
+    }
+
+    .typeInBoxPopUp {
+        right: 20%;
+        top: 63%;
+        z-index: 1;
+
+    }
+
+
+
+
 
     /*---TOP SERVICE CONTENTS---*/
 
@@ -276,6 +294,8 @@ a {
         border: 1px solid #F4B494;
         color: #E7E6E0;
         font-size: 1.3em;
+        z-index: 1;
+
 
     }
 
