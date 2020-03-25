@@ -44,7 +44,6 @@ a {
     .deepCleanButton,
     .movingInOutButton,
     .nextButton,
-    .basicClean-submitButton,
     .deepClean-submitButton,
     .movingInOut-submitButton,
     .bedroomsButton,
@@ -156,217 +155,181 @@ a {
 
     }
 
-    .basicClean-inputField,
-    .deepClean-inputField,
-    .movingInOut-inputField {
-        opacity: 0;
-        position: absolute;
-        border: none;
-        background: #495B60;
-        padding: 18px 0px 0px 10px;
-        outline: none;
-        color: transparent;
-        text-shadow: 0px 0px 0px #fff;
-        text-shadow: 0px 0px 0px 0px blue;
-        font-size: 1.1em;
-        font-family: 'Josefin Sans', sans-serif;
-        resize: none;
 
-    }
+}
 
-    ::-webkit-input-placeholder {
-        color: #E7E6E0;
-        font-size: 0.5em;
-        text-align: center;
-        opacity: 0.4;
-        line-height: 200%;
-        text-transform: uppercase;
+::-webkit-input-placeholder {
+    color: #E7E6E0;
+    font-size: 0.5em;
+    text-align: center;
+    opacity: 0.4;
+    line-height: 200%;
+    text-transform: uppercase;
 
 
-    }
+}
 
-    :-ms-input-placeholder {
-        color: #E7E6E0;
-        font-size: 0.5em;
-        text-align: center;
-        opacity: 0.4;
-        line-height: 200%;
-        text-transform: uppercase;
-
-
-    }
-
-    ::placeholder {
-        color: #E7E6E0;
-        font-size: 0.5em;
-        text-align: center;
-        opacity: 0.4;
-        line-height: 200%;
-        text-transform: uppercase;
-
-    }
-
-    .basicClean-submitButton,
-    .deepClean-submitButton,
-    .movingInOut-submitButton {
-        position: absolute;
-        bottom: 5%;
-        border-radius: 100px;
-        border: 1px solid #F4B494;
-        background-color: transparent;
-        height: 10%;
-        width: 50%;
-        font-size: 0.7em;
-        opacity: 0;
-        cursor: pointer;
-
-    }
+:-ms-input-placeholder {
+    color: #E7E6E0;
+    font-size: 0.5em;
+    text-align: center;
+    opacity: 0.4;
+    line-height: 200%;
+    text-transform: uppercase;
 
 
-    .nextButton {
-        position: relative;
-        height: 45px;
-        width: 100%;
-        top: 4%;
-        font-size: 1.3em;
-        color: #E7E6E0;
-    }
+}
+
+::placeholder {
+    color: #E7E6E0;
+    font-size: 0.5em;
+    text-align: center;
+    opacity: 0.4;
+    line-height: 200%;
+    text-transform: uppercase;
+
+}
 
 
-
-    .animatedUnderline {
-        opacity: 0;
-        width: 0%;
-    }
-
-
-    /*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
-
-
-    .numberOfRooms-Blurb {
-        position: absolute;
-        bottom: 30%;
-        font-weight: 200;
-        font-size: 1.1em;
-        text-align: center;
-        margin: 0;
-
-    }
-
-    /*---POP UP INFO---*/
-
-    .tapToAddRoomPopUp,
-    .typeInBoxPopUp {
-        position: absolute;
-        height: 40px;
-        animation-name: overlay;
-        display: none;
-        animation-duration: 7s;
-        animation-delay: 2s;
-
-    }
-
-    .tapToAddRoomPopUp {
-        top: 28%;
-        left: 7%;
-        z-index: 1;
-
-    }
-
-    .typeInBoxPopUp {
-        right: 20%;
-        top: 63%;
-        z-index: 1;
-
-    }
-
-    /*---BUTTONS---*/
+.nextButton {
+    position: relative;
+    height: 45px;
+    width: 100%;
+    top: 4%;
+    font-size: 1.3em !important;
+    color: #E7E6E0;
+}
 
 
-    .bedroomsButton,
-    .bathroomsButton,
-    .kitchensButton {
-        position: relative;
-        background-color: transparent;
-        height: 50px;
-        width: 50%;
-        transform: translateX(-10%);
-        border: 1px solid #F4B494;
-        color: #E7E6E0;
-        font-size: 1.3em;
-        z-index: 1;
+.animatedUnderline {
+    opacity: 0;
+    width: 0%;
+}
 
 
-    }
-
-    .bedroomsButton::before,
-    .bathroomsButton::before,
-    .kitchensButton::before {
-        background: none;
-        border: 1px solid #F4B494;
-        content: "";
-        display: block;
-        position: absolute;
-        top: 3px;
-        left: 3px;
-        right: 3px;
-        bottom: 3px;
-        pointer-events: none;
-
-    }
-
-    .roomsAmount {
-        position: absolute;
-        width: 50px;
-        height: 45px;
-        right: -60px;
-        border: none;
-        border-bottom: 1px solid #F4B494;
-        outline: none;
-        font-size: 1.4em;
-        text-align: center;
-        background-color: transparent;
-        color: #fff;
-    }
-
-    .addRoom,
-    .subtractRoom {
-        position: absolute;
-        font-size: 1.3em;
-        width: 50%;
-        height: 45px;
-        z-index: 1;
-        display: flex;
-
-    }
-
-    .addRoom {
-        position: absolute;
-        left: 0;
-    }
-
-    .subtractRoom {
-        position: absolute;
-        right: 0;
-    }
-
-    .plusOne,
-    .subtractOne {
-        position: absolute;
-        align-self: center;
-
-    }
-
-    .plusOne {
-        left: 10%;
-    }
-
-    .subtractOne {
-        right: 14%;
-    }
+/*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
 
 
+.numberOfRooms-Blurb {
+    position: absolute;
+    bottom: 30%;
+    font-weight: 200;
+    font-size: 1.1em;
+    text-align: center;
+    margin: 0;
 
+}
+
+/*---POP UP INFO---*/
+
+.tapToAddRoomPopUp,
+.typeInBoxPopUp {
+    position: absolute;
+    height: 40px;
+    animation-name: overlay;
+    display: none;
+    animation-duration: 7s;
+    animation-delay: 2s;
+
+}
+
+.tapToAddRoomPopUp {
+    top: 28%;
+    left: 7%;
+    z-index: 1;
+
+}
+
+.typeInBoxPopUp {
+    right: 20%;
+    top: 63%;
+    z-index: 1;
+
+}
+
+/*---BUTTONS---*/
+
+
+.bedroomsButton,
+.bathroomsButton,
+.kitchensButton {
+    position: relative;
+    background-color: transparent;
+    height: 50px;
+    width: 50%;
+    transform: translateX(-10%);
+    border: 1px solid #F4B494;
+    color: #E7E6E0;
+    font-size: 1.3em;
+    z-index: 1;
+
+
+}
+
+.bedroomsButton::before,
+.bathroomsButton::before,
+.kitchensButton::before {
+    background: none;
+    border: 1px solid #F4B494;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    pointer-events: none;
+
+}
+
+.roomsAmount {
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    right: -60px;
+    border: none;
+    border-bottom: 1px solid #F4B494;
+    outline: none;
+    font-size: 1.4em;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+}
+
+.addRoom,
+.subtractRoom {
+    position: absolute;
+    font-size: 1.3em;
+    width: 50%;
+    height: 45px;
+    z-index: 1;
+    display: flex;
+
+}
+
+.addRoom {
+    position: absolute;
+    left: 0;
+}
+
+.subtractRoom {
+    position: absolute;
+    right: 0;
+}
+
+.plusOne,
+.subtractOne {
+    position: absolute;
+    align-self: center;
+
+}
+
+.plusOne {
+    left: 10%;
+}
+
+.subtractOne {
+    right: 14%;
 }
 
 @media only screen and (min-device-width : 375px) {
@@ -390,7 +353,6 @@ a {
     .deepCleanButton,
     .movingInOutButton,
     .nextButton,
-    .basicClean-submitButton,
     .deepClean-submitButton,
     .movingInOut-submitButton {
         display: flex;
@@ -496,222 +458,188 @@ a {
 
     }
 
-    .basicClean-inputField,
-    .deepClean-inputField,
-    .movingInOut-inputField {
-        opacity: 0;
-        position: absolute;
-        border: none;
-        background: #495B60;
-        padding: 18px 0px 0px 10px;
-        outline: none;
-        color: transparent;
-        text-shadow: 0px 0px 0px #fff;
-        text-shadow: 0px 0px 0px 0px blue;
-        font-size: 1.1em;
-        font-family: 'Josefin Sans', sans-serif;
-        resize: none;
-
-    }
-
-    ::-webkit-input-placeholder {
-        color: #E7E6E0;
-        font-size: 0.5em;
-        text-align: center;
-        opacity: 0.4;
-        line-height: 200%;
-        text-transform: uppercase;
-
-
-    }
-
-    :-ms-input-placeholder {
-        color: #E7E6E0;
-        font-size: 0.5em;
-        text-align: center;
-        opacity: 0.4;
-        line-height: 200%;
-        text-transform: uppercase;
-
-
-    }
-
-    ::placeholder {
-        color: #E7E6E0;
-        font-size: 0.5em;
-        text-align: center;
-        opacity: 0.4;
-        line-height: 200%;
-        text-transform: uppercase;
-
-    }
-
-    .basicClean-submitButton,
-    .deepClean-submitButton,
-    .movingInOut-submitButton {
-        position: absolute;
-        bottom: 5%;
-        border-radius: 100px;
-        border: 1px solid #F4B494;
-        background-color: transparent;
-        height: 10%;
-        width: 50%;
-        font-size: 0.7em;
-        opacity: 0;
-        cursor: pointer;
-
-
-    }
-
-
-    .nextButton {
-        position: relative;
-        height: 10%;
-        top: 4%;
-        font-size: 1.3em;
-        color: #E7E6E0;
-    }
-
-
-
-    .animatedUnderline {
-        opacity: 0;
-        width: 0%;
-    }
-
-    /*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
-
-    /*---POP UP INFO---*/
-
-    .tapToAddRoomPopUp,
-    .typeInBoxPopUp {
-        position: absolute;
-        height: 50px;
-        animation-name: overlay;
-        display: none;
-        animation-duration: 7s;
-        animation-delay: 2s;
-
-    }
-
-    .tapToAddRoomPopUp {
-        top: 30%;
-        left: 7%;
-        z-index: 1;
-
-    }
-
-    .typeInBoxPopUp {
-        right: 25%;
-        top: 60%;
-        z-index: 1;
-
-    }
-
-    .numberOfRooms-Blurb {
-        position: absolute;
-        bottom: 30%;
-        font-weight: 200;
-        font-size: 1.1em;
-        text-align: center;
-        margin: 0;
-
-    }
-
-    /*---BUTTONS---*/
-
-
-    .bedroomsButton,
-    .bathroomsButton,
-    .kitchensButton {
-        position: relative;
-        background-color: transparent;
-        height: 50px;
-        width: 50%;
-        transform: translateX(-10%);
-        border: 1px solid #F4B494;
-        color: #E7E6E0;
-        font-size: 1.3em;
-
-    }
-
-    .bedroomsButton::before,
-    .bathroomsButton::before,
-    .kitchensButton::before {
-        background: none;
-        border: 1px solid #F4B494;
-        content: "";
-        display: block;
-        position: absolute;
-        top: 3px;
-        left: 3px;
-        right: 3px;
-        bottom: 3px;
-        pointer-events: none;
-
-    }
-
-    .roomsAmount {
-        position: absolute;
-        width: 50px;
-        height: 45px;
-        right: -60px;
-        border: none;
-        border-bottom: 1px solid #F4B494;
-        outline: none;
-        font-size: 1.4em;
-        text-align: center;
-        background-color: transparent;
-        color: #fff;
-        -webkit-appearance: none;
-    }
-
-    .addRoom,
-    .subtractRoom {
-        position: absolute;
-        font-size: 1.3em;
-        width: 50%;
-        height: 45px;
-        z-index: 1;
-        display: flex;
-
-    }
-
-    .addRoom {
-        position: absolute;
-        left: 0;
-    }
-
-    .subtractRoom {
-        position: absolute;
-        right: 0;
-    }
-
-    .plusOne,
-    .subtractOne {
-        position: absolute;
-        align-self: center;
-
-    }
-
-    .plusOne {
-        left: 10%;
-    }
-
-    .subtractOne {
-        right: 14%;
-    }
-
-
-
-
-    /*---HOVERS& SUCH---*/
-
-    .basicClean-submitButton:active {
-        opacity: 0.5;
-    }
 
 }
+
+::-webkit-input-placeholder {
+    color: #E7E6E0;
+    font-size: 0.5em;
+    text-align: center;
+    opacity: 0.4;
+    line-height: 200%;
+    text-transform: uppercase;
+
+
+}
+
+:-ms-input-placeholder {
+    color: #E7E6E0;
+    font-size: 0.5em;
+    text-align: center;
+    opacity: 0.4;
+    line-height: 200%;
+    text-transform: uppercase;
+
+
+}
+
+::placeholder {
+    color: #E7E6E0;
+    font-size: 0.5em;
+    text-align: center;
+    opacity: 0.4;
+    line-height: 200%;
+    text-transform: uppercase;
+
+}
+
+.nextButton {
+    position: relative;
+    height: 10%;
+    top: 4%;
+    font-size: 1.3em;
+    color: #E7E6E0;
+}
+
+
+
+.animatedUnderline {
+    opacity: 0;
+    width: 0%;
+}
+
+/*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
+
+/*---POP UP INFO---*/
+
+.tapToAddRoomPopUp,
+.typeInBoxPopUp {
+    position: absolute;
+    height: 50px;
+    animation-name: overlay;
+    display: none;
+    animation-duration: 7s;
+    animation-delay: 2s;
+
+}
+
+.tapToAddRoomPopUp {
+    top: 30%;
+    left: 7%;
+    z-index: 1;
+
+}
+
+.typeInBoxPopUp {
+    right: 25%;
+    top: 60%;
+    z-index: 1;
+
+}
+
+.numberOfRooms-Blurb {
+    position: absolute;
+    bottom: 30%;
+    font-weight: 200;
+    font-size: 1.1em;
+    text-align: center;
+    margin: 0;
+
+}
+
+/*---BUTTONS---*/
+
+
+.bedroomsButton,
+.bathroomsButton,
+.kitchensButton {
+    position: relative;
+    background-color: transparent;
+    height: 50px;
+    width: 50%;
+    transform: translateX(-10%);
+    border: 1px solid #F4B494;
+    color: #E7E6E0;
+    font-size: 1.3em;
+
+}
+
+.bedroomsButton::before,
+.bathroomsButton::before,
+.kitchensButton::before {
+    background: none;
+    border: 1px solid #F4B494;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    pointer-events: none;
+
+}
+
+.roomsAmount {
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    right: -60px;
+    border: none;
+    border-bottom: 1px solid #F4B494;
+    outline: none;
+    font-size: 1.4em;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    -webkit-appearance: none;
+}
+
+.addRoom,
+.subtractRoom {
+    position: absolute;
+    font-size: 1.3em;
+    width: 50%;
+    height: 45px;
+    z-index: 1;
+    display: flex;
+
+}
+
+.addRoom {
+    position: absolute;
+    left: 0;
+}
+
+.subtractRoom {
+    position: absolute;
+    right: 0;
+}
+
+.plusOne,
+.subtractOne {
+    position: absolute;
+    align-self: center;
+
+}
+
+.plusOne {
+    left: 10%;
+}
+
+.subtractOne {
+    right: 14%;
+}
+
+
+
+
+/*---HOVERS& SUCH---*/
+
+.basicClean-submitButton:active {
+    opacity: 0.5;
+}
+
 
 @media only screen and (min-device-width : 414px) {
 
@@ -734,7 +662,6 @@ a {
     .deepCleanButton,
     .movingInOutButton,
     .nextButton,
-    .basicClean-submitButton,
     .deepClean-submitButton,
     .movingInOut-submitButton {
         display: flex;
@@ -840,120 +767,86 @@ a {
 
     }
 
-    .basicClean-inputField,
-    .deepClean-inputField,
-    .movingInOut-inputField {
-        opacity: 0;
-        position: absolute;
-        border: none;
-        background: #495B60;
-        padding: 18px 0px 0px 10px;
-        outline: none;
-        color: transparent;
-        text-shadow: 0px 0px 0px #fff;
-        text-shadow: 0px 0px 0px 0px blue;
-        font-size: 1.1em;
-        font-family: 'Josefin Sans', sans-serif;
-        resize: none;
-
-    }
-
-    ::-webkit-input-placeholder {
-        color: #E7E6E0;
-        font-size: 0.5em;
-        text-align: center;
-        opacity: 0.4;
-        line-height: 200%;
-        text-transform: uppercase;
-
-
-    }
-
-    :-ms-input-placeholder {
-        color: #E7E6E0;
-        font-size: 0.5em;
-        text-align: center;
-        opacity: 0.4;
-        line-height: 200%;
-        text-transform: uppercase;
-
-
-    }
-
-    ::placeholder {
-        color: #E7E6E0;
-        font-size: 0.5em;
-        text-align: center;
-        opacity: 0.4;
-        line-height: 200%;
-        text-transform: uppercase;
-
-    }
-
-    .basicClean-submitButton,
-    .deepClean-submitButton,
-    .movingInOut-submitButton {
-        position: absolute;
-        bottom: 5%;
-        border-radius: 100px;
-        border: 1px solid #F4B494;
-        background-color: transparent;
-        height: 10%;
-        width: 50%;
-        font-size: 0.7em;
-        opacity: 0;
-        cursor: pointer;
-
-
-    }
-
-
-    .nextButton {
-        position: relative;
-        height: 10%;
-        top: 4%;
-        font-size: 1.3em;
-        color: #E7E6E0;
-    }
-
-
-
-    /*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
-
-    /*---POP UP INFO---*/
-
-    .tapToAddRoomPopUp,
-    .typeInBoxPopUp {
-        position: absolute;
-        height: 50px;
-        animation-name: overlay;
-        display: none;
-        animation-duration: 7s;
-        animation-delay: 2s;
-
-    }
-
-    .tapToAddRoomPopUp {
-        top: 28%;
-        left: 7%;
-        z-index: 1;
-
-    }
-
-    .typeInBoxPopUp {
-        right: 25%;
-        top: 63%;
-        z-index: 1;
-
-    }
-
-    /*---HOVERS& SUCH---*/
-
-    .basicClean-submitButton:active {
-        opacity: 0.5;
-    }
 
 }
+
+::-webkit-input-placeholder {
+    color: #E7E6E0;
+    font-size: 0.5em;
+    text-align: center;
+    opacity: 0.4;
+    line-height: 200%;
+    text-transform: uppercase;
+
+
+}
+
+:-ms-input-placeholder {
+    color: #E7E6E0;
+    font-size: 0.5em;
+    text-align: center;
+    opacity: 0.4;
+    line-height: 200%;
+    text-transform: uppercase;
+
+
+}
+
+::placeholder {
+    color: #E7E6E0;
+    font-size: 0.5em;
+    text-align: center;
+    opacity: 0.4;
+    line-height: 200%;
+    text-transform: uppercase;
+
+}
+
+.nextButton {
+    position: relative;
+    height: 10%;
+    top: 4%;
+    font-size: 1.3em;
+    color: #E7E6E0;
+}
+
+
+
+/*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
+
+/*---POP UP INFO---*/
+
+.tapToAddRoomPopUp,
+.typeInBoxPopUp {
+    position: absolute;
+    height: 50px;
+    animation-name: overlay;
+    display: none;
+    animation-duration: 7s;
+    animation-delay: 2s;
+
+}
+
+.tapToAddRoomPopUp {
+    top: 28%;
+    left: 7%;
+    z-index: 1;
+
+}
+
+.typeInBoxPopUp {
+    right: 25%;
+    top: 63%;
+    z-index: 1;
+
+}
+
+/*---HOVERS& SUCH---*/
+
+.basicClean-submitButton:active {
+    opacity: 0.5;
+}
+
 
 /*--ipads-----*/
 
@@ -978,7 +871,6 @@ a {
     .deepCleanButton,
     .movingInOutButton,
     .nextButton,
-    .basicClean-submitButton,
     .deepClean-submitButton,
     .movingInOut-submitButton {
         display: flex;
@@ -1090,212 +982,179 @@ a {
 
     }
 
-    .basicClean-inputField,
-    .deepClean-inputField,
-    .movingInOut-inputField {
-        opacity: 0;
-        position: absolute;
-        border: none;
-        background: #495B60;
-        padding: 18px 0px 0px 10px;
-        outline: none;
-        color: transparent;
-        text-shadow: 0px 0px 0px #fff;
-        text-shadow: 0px 0px 0px 0px blue;
-        font-size: 1.1em;
-        font-family: 'Josefin Sans', sans-serif;
-        resize: none;
 
-    }
+}
 
-    ::-webkit-input-placeholder {
-        color: #E7E6E0;
-        font-size: 1em;
-        text-align: center;
-        opacity: 0.4;
-        line-height: 200%;
-        text-transform: uppercase;
+::-webkit-input-placeholder {
+    color: #E7E6E0;
+    font-size: 1em;
+    text-align: center;
+    opacity: 0.4;
+    line-height: 200%;
+    text-transform: uppercase;
 
 
-    }
+}
 
-    :-ms-input-placeholder {
-        color: #E7E6E0;
-        font-size: 1em;
-        text-align: center;
-        opacity: 0.4;
-        line-height: 200%;
-        text-transform: uppercase;
-
-
-    }
-
-    ::placeholder {
-        color: #E7E6E0;
-        font-size: 1em;
-        text-align: center;
-        opacity: 0.4;
-        line-height: 200%;
-        text-transform: uppercase;
-
-    }
-
-    .basicClean-submitButton,
-    .deepClean-submitButton,
-    .movingInOut-submitButton {
-        position: absolute;
-        bottom: 5%;
-        border-radius: 100px;
-        border: 1px solid #F4B494;
-        background-color: transparent;
-        height: 10%;
-        width: 50%;
-        font-size: 1em;
-        opacity: 0;
-        cursor: pointer;
+:-ms-input-placeholder {
+    color: #E7E6E0;
+    font-size: 1em;
+    text-align: center;
+    opacity: 0.4;
+    line-height: 200%;
+    text-transform: uppercase;
 
 
-    }
+}
 
+::placeholder {
+    color: #E7E6E0;
+    font-size: 1em;
+    text-align: center;
+    opacity: 0.4;
+    line-height: 200%;
+    text-transform: uppercase;
 
-    .nextButton {
-        position: relative;
-        height: 10%;
-        top: 4%;
-        font-size: 1.8em;
-        color: #E7E6E0;
-    }
+}
 
 
 
-    /*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
-
-    /*---POP UP INFO---*/
-
-    .tapToAddRoomPopUp,
-    .typeInBoxPopUp {
-        position: absolute;
-        height: 65px;
-        animation-name: overlay;
-        display: none;
-        animation-duration: 7s;
-        animation-delay: 2s;
-
-    }
-
-    .tapToAddRoomPopUp {
-        top: 29%;
-        left: 7%;
-        z-index: 1;
-
-    }
-
-    .typeInBoxPopUp {
-        right: 27%;
-        top: 59%;
-        z-index: 1;
-
-    }
-
-    .numberOfRooms-Blurb {
-        position: absolute;
-        bottom: 30%;
-        font-weight: 200;
-        font-size: 1.7em;
-        text-align: center;
-        margin: 0;
-
-    }
-
-    /*---BUTTONS---*/
+.nextButton {
+    position: relative;
+    height: 10%;
+    top: 4%;
+    font-size: 1.8em;
+    color: #E7E6E0;
+}
 
 
-    .bedroomsButton,
-    .bathroomsButton,
-    .kitchensButton {
-        position: relative;
-        background-color: transparent;
-        height: 60px;
-        width: 50%;
-        transform: translateX(-10%);
-        border: 1px solid #F4B494;
-        color: #E7E6E0;
-        font-size: 1.5em;
 
-    }
+/*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
 
-    .bedroomsButton::before,
-    .bathroomsButton::before,
-    .kitchensButton::before {
-        background: none;
-        border: 1px solid #F4B494;
-        content: "";
-        display: block;
-        position: absolute;
-        top: 3px;
-        left: 3px;
-        right: 3px;
-        bottom: 3px;
-        pointer-events: none;
+/*---POP UP INFO---*/
 
-    }
+.tapToAddRoomPopUp,
+.typeInBoxPopUp {
+    position: absolute;
+    height: 65px;
+    animation-name: overlay;
+    display: none;
+    animation-duration: 7s;
+    animation-delay: 2s;
 
-    .roomsAmount {
-        position: absolute;
-        width: 50px;
-        height: 45px;
-        right: -60px;
-        border: none;
-        border-bottom: 1px solid #F4B494;
-        outline: none;
-        font-size: 1.4em;
-        text-align: center;
-        background-color: transparent;
-        color: #fff;
-    }
+}
 
-    .addRoom,
-    .subtractRoom {
-        position: absolute;
-        font-size: 1.5em;
-        width: 50%;
-        height: 45px;
-        z-index: 1;
-        display: flex;
+.tapToAddRoomPopUp {
+    top: 29%;
+    left: 7%;
+    z-index: 1;
 
-    }
+}
 
-    .addRoom {
-        position: absolute;
-        left: 0;
-    }
+.typeInBoxPopUp {
+    right: 27%;
+    top: 59%;
+    z-index: 1;
 
-    .subtractRoom {
-        position: absolute;
-        right: 0;
-    }
+}
 
-    .plusOne,
-    .subtractOne {
-        position: absolute;
-        align-self: center;
+.numberOfRooms-Blurb {
+    position: absolute;
+    bottom: 30%;
+    font-weight: 200;
+    font-size: 1.7em;
+    text-align: center;
+    margin: 0;
 
-    }
+}
 
-    .plusOne {
-        left: 10%;
-    }
+/*---BUTTONS---*/
 
-    .subtractOne {
-        right: 14%;
-    }
 
-    /*---HOVERS& SUCH---*/
+.bedroomsButton,
+.bathroomsButton,
+.kitchensButton {
+    position: relative;
+    background-color: transparent;
+    height: 60px;
+    width: 50%;
+    transform: translateX(-10%);
+    border: 1px solid #F4B494;
+    color: #E7E6E0;
+    font-size: 1.5em;
 
-    .basicClean-submitButton:active {
-        opacity: 0.5;
-    }
+}
 
+.bedroomsButton::before,
+.bathroomsButton::before,
+.kitchensButton::before {
+    background: none;
+    border: 1px solid #F4B494;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    pointer-events: none;
+
+}
+
+.roomsAmount {
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    right: -60px;
+    border: none;
+    border-bottom: 1px solid #F4B494;
+    outline: none;
+    font-size: 1.4em;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+}
+
+.addRoom,
+.subtractRoom {
+    position: absolute;
+    font-size: 1.5em;
+    width: 50%;
+    height: 45px;
+    z-index: 1;
+    display: flex;
+
+}
+
+.addRoom {
+    position: absolute;
+    left: 0;
+}
+
+.subtractRoom {
+    position: absolute;
+    right: 0;
+}
+
+.plusOne,
+.subtractOne {
+    position: absolute;
+    align-self: center;
+
+}
+
+.plusOne {
+    left: 10%;
+}
+
+.subtractOne {
+    right: 14%;
+}
+
+/*---HOVERS& SUCH---*/
+
+.basicClean-submitButton:active {
+    opacity: 0.5;
 }
 
 @media only screen and (min-device-width : 1024px) {
@@ -1319,7 +1178,6 @@ a {
     .deepCleanButton,
     .movingInOutButton,
     .nextButton,
-    .basicClean-submitButton,
     .deepClean-submitButton,
     .movingInOut-submitButton {
         display: flex;
@@ -1431,213 +1289,182 @@ a {
 
     }
 
-    .basicClean-inputField,
-    .deepClean-inputField,
-    .movingInOut-inputField {
-        opacity: 0;
-        position: absolute;
-        border: none;
-        background: #495B60;
-        padding: 18px 0px 0px 10px;
-        outline: none;
-        color: transparent;
-        text-shadow: 0px 0px 0px #fff;
-        text-shadow: 0px 0px 0px 0px blue;
-        font-size: 1.1em;
-        font-family: 'Josefin Sans', sans-serif;
-        resize: none;
-
-    }
-
-    ::-webkit-input-placeholder {
-        color: #E7E6E0;
-        font-size: 1em;
-        text-align: center;
-        opacity: 0.4;
-        line-height: 200%;
-        text-transform: uppercase;
-
-
-    }
-
-    :-ms-input-placeholder {
-        color: #E7E6E0;
-        font-size: 1em;
-        text-align: center;
-        opacity: 0.4;
-        line-height: 200%;
-        text-transform: uppercase;
-
-
-    }
-
-    ::placeholder {
-        color: #E7E6E0;
-        font-size: 1em;
-        text-align: center;
-        opacity: 0.4;
-        line-height: 200%;
-        text-transform: uppercase;
-
-    }
-
-    .basicClean-submitButton,
-    .deepClean-submitButton,
-    .movingInOut-submitButton {
-        position: absolute;
-        bottom: 5%;
-        border-radius: 100px;
-        border: 1px solid #F4B494;
-        background-color: transparent;
-        height: 10%;
-        width: 50%;
-        font-size: 1em;
-        opacity: 0;
-        cursor: pointer;
-
-
-    }
-
-
-    .nextButton {
-        position: relative;
-        height: 10%;
-        top: 4%;
-        font-size: 2.3em;
-        color: #E7E6E0;
-    }
-
-
-
-    /*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
-
-    /*---POP UP INFO---*/
-
-    .tapToAddRoomPopUp,
-    .typeInBoxPopUp {
-        position: absolute;
-        height: 65px;
-        animation-name: overlay;
-        display: none;
-        animation-duration: 7s;
-        animation-delay: 2s;
-
-    }
-
-    .tapToAddRoomPopUp {
-        top: 29%;
-        left: 7%;
-        z-index: 1;
-
-    }
-
-    .typeInBoxPopUp {
-        right: 27%;
-        top: 59%;
-        z-index: 1;
-
-    }
-
-    .numberOfRooms-Blurb {
-        position: absolute;
-        bottom: 30%;
-        font-weight: 200;
-        font-size: 2.5em;
-        text-align: center;
-        margin: 0;
-
-    }
-
-    /*---BUTTONS---*/
-
-
-    .bedroomsButton,
-    .bathroomsButton,
-    .kitchensButton {
-        position: relative;
-        background-color: transparent;
-        height: 90px;
-        width: 55%;
-        transform: translateX(-5%);
-        border: 1px solid #F4B494;
-        color: #E7E6E0;
-        font-size: 2em;
-
-    }
-
-    .bedroomsButton::before,
-    .bathroomsButton::before,
-    .kitchensButton::before {
-        background: none;
-        border: 1px solid #F4B494;
-        content: "";
-        display: block;
-        position: absolute;
-        top: 3px;
-        left: 3px;
-        right: 3px;
-        bottom: 3px;
-        pointer-events: none;
-
-    }
-
-    .roomsAmount {
-        position: absolute;
-        width: 65px;
-        height: 45px;
-        right: -80px;
-        border-bottom: 1px solid #F4B494;
-        bottom: 0;
-        outline: none;
-        font-size: 1.4em;
-        text-align: center;
-        background-color: transparent;
-        color: #fff;
-    }
-
-    .addRoom,
-    .subtractRoom {
-        position: absolute;
-        font-size: 1.5em;
-        width: 50%;
-        height: 45px;
-        z-index: 1;
-        display: flex;
-
-    }
-
-    .addRoom {
-        position: absolute;
-        left: 0;
-    }
-
-    .subtractRoom {
-        position: absolute;
-        right: 0;
-    }
-
-    .plusOne,
-    .subtractOne {
-        position: absolute;
-        align-self: center;
-
-    }
-
-    .plusOne {
-        left: 10%;
-    }
-
-    .subtractOne {
-        right: 14%;
-    }
-
-    /*---HOVERS& SUCH---*/
-
-    .basicClean-submitButton:active {
-        opacity: 0.5;
-    }
 
 }
+
+::-webkit-input-placeholder {
+    color: #E7E6E0;
+    font-size: 1em;
+    text-align: center;
+    opacity: 0.4;
+    line-height: 200%;
+    text-transform: uppercase;
+
+
+}
+
+:-ms-input-placeholder {
+    color: #E7E6E0;
+    font-size: 1em;
+    text-align: center;
+    opacity: 0.4;
+    line-height: 200%;
+    text-transform: uppercase;
+
+
+}
+
+::placeholder {
+    color: #E7E6E0;
+    font-size: 1em;
+    text-align: center;
+    opacity: 0.4;
+    line-height: 200%;
+    text-transform: uppercase;
+
+}
+
+
+
+.nextButton {
+    position: relative;
+    height: 10%;
+    top: 4%;
+    font-size: 2.3em;
+    color: #E7E6E0;
+}
+
+
+
+/*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
+
+
+/*---POP UP INFO---*/
+
+.tapToAddRoomPopUp,
+.typeInBoxPopUp {
+    position: absolute;
+    height: 65px;
+    animation-name: overlay;
+    display: none;
+    animation-duration: 7s;
+    animation-delay: 2s;
+
+}
+
+.tapToAddRoomPopUp {
+    top: 29%;
+    left: 7%;
+    z-index: 1;
+
+}
+
+.typeInBoxPopUp {
+    right: 27%;
+    top: 59%;
+    z-index: 1;
+
+}
+
+.numberOfRooms-Blurb {
+    position: absolute;
+    bottom: 30%;
+    font-weight: 200;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0;
+
+}
+
+/*---BUTTONS---*/
+
+
+.bedroomsButton,
+.bathroomsButton,
+.kitchensButton {
+    position: relative;
+    background-color: transparent;
+    height: 90px;
+    width: 55%;
+    transform: translateX(-5%);
+    border: 1px solid #F4B494;
+    color: #E7E6E0;
+    font-size: 2em;
+
+}
+
+.bedroomsButton::before,
+.bathroomsButton::before,
+.kitchensButton::before {
+    background: none;
+    border: 1px solid #F4B494;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    pointer-events: none;
+
+}
+
+.roomsAmount {
+    position: absolute;
+    width: 65px;
+    height: 45px;
+    right: -80px;
+    border-bottom: 1px solid #F4B494;
+    bottom: 0;
+    outline: none;
+    font-size: 1.4em;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+}
+
+.addRoom,
+.subtractRoom {
+    position: absolute;
+    font-size: 1.5em;
+    width: 50%;
+    height: 45px;
+    z-index: 1;
+    display: flex;
+
+}
+
+.addRoom {
+    position: absolute;
+    left: 0;
+}
+
+.subtractRoom {
+    position: absolute;
+    right: 0;
+}
+
+.plusOne,
+.subtractOne {
+    position: absolute;
+    align-self: center;
+
+}
+
+.plusOne {
+    left: 10%;
+}
+
+.subtractOne {
+    right: 14%;
+}
+
+/*---HOVERS& SUCH---*/
+
+.basicClean-submitButton:active {
+    opacity: 0.5;
+}
+
 
 /*--desktop-----*/
 
@@ -1662,7 +1489,6 @@ a {
     .deepCleanButton,
     .movingInOutButton,
     .nextButton,
-    .basicClean-submitButton,
     .deepClean-submitButton,
     .movingInOut-submitButton {
         display: flex;
@@ -1774,23 +1600,6 @@ a {
 
     }
 
-    .basicClean-inputField,
-    .deepClean-inputField,
-    .movingInOut-inputField {
-        opacity: 0;
-        position: absolute;
-        border: none;
-        background: #495B60;
-        padding: 18px 0px 0px 10px;
-        outline: none;
-        color: transparent;
-        text-shadow: 0px 0px 0px #fff;
-        text-shadow: 0px 0px 0px 0px blue;
-        font-size: 1.1em;
-        font-family: 'Josefin Sans', sans-serif;
-        resize: none;
-
-    }
 
     ::-webkit-input-placeholder {
         color: #E7E6E0;
@@ -1819,22 +1628,6 @@ a {
         opacity: 0.4;
         line-height: 200%;
         text-transform: uppercase;
-    }
-
-    .basicClean-submitButton,
-    .deepClean-submitButton,
-    .movingInOut-submitButton {
-        position: absolute;
-        bottom: 5%;
-        border-radius: 100px;
-        border: 1px solid #F4B494;
-        background-color: transparent;
-        height: 10%;
-        width: 50%;
-        font-size: 0.7em;
-        opacity: 0;
-        cursor: pointer;
-
     }
 
 
