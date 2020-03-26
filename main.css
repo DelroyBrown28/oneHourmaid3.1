@@ -17,11 +17,11 @@ html {
 }
 
 a {
-    
+
     text-decoration: none;
     color: white;
-    
-    
+
+
 }
 
 
@@ -702,7 +702,7 @@ a {
         font-size: 1.8em;
         color: #E7E6E0;
     }
-    
+
 
 
 }
@@ -843,14 +843,140 @@ a {
 
     }
 
+    /*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
+
+
+    .numberOfRooms-Blurb {
+        position: absolute;
+        bottom: 30%;
+        font-weight: 200;
+        font-size: 1.8em;
+        opacity: 0.7;
+        text-align: center;
+        margin: 0;
+
+    }
+
+    /*---POP UP INFO---*/
+
+    .tapToAddRoomPopUp,
+    .typeInBoxPopUp {
+        position: absolute;
+        height: 40px;
+        animation-name: overlay;
+        display: none;
+        animation-duration: 7s;
+        animation-delay: 2s;
+
+    }
+
+    .tapToAddRoomPopUp {
+        top: 28%;
+        left: 7%;
+        z-index: 1;
+
+    }
+
+    .typeInBoxPopUp {
+        right: 20%;
+        top: 63%;
+        z-index: 1;
+
+    }
+
+    /*---BUTTONS---*/
+
+    .bedroomsButton,
+    .bathroomsButton,
+    .kitchensButton {
+        position: relative;
+        background-color: transparent;
+        height: 70px;
+        width: 50%;
+        transform: translateX(-10%);
+        border: 1px solid #F4B494;
+        color: #E7E6E0;
+        font-size: 1.8em;
+        z-index: 1;
+
+
+    }
+
+    .bedroomsButton::before,
+    .bathroomsButton::before,
+    .kitchensButton::before {
+        background: none;
+        border: 1px solid #F4B494;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        right: 3px;
+        bottom: 3px;
+        pointer-events: none;
+
+    }
+
+    .roomsAmount {
+        position: absolute;
+        width: 50px;
+        height: 45px;
+        right: -60px;
+        border: none;
+        border-bottom: 1px solid #F4B494;
+        outline: none;
+        font-size: 1.4em;
+        text-align: center;
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .addRoom,
+    .subtractRoom {
+        position: absolute;
+        font-size: 1.3em;
+        width: 50%;
+        height: 45px;
+        z-index: 1;
+        display: flex;
+
+    }
+
+    .addRoom {
+        position: absolute;
+        left: 0;
+    }
+
+    .subtractRoom {
+        position: absolute;
+        right: 0;
+    }
+
+    .plusOne,
+    .subtractOne {
+        position: absolute;
+        align-self: center;
+
+    }
+
+    .plusOne {
+        left: 10%;
+    }
+
+    .subtractOne {
+        right: 14%;
+    }
+
+
     .nextButton {
         position: relative;
         height: 10%;
         top: 6% !important;
-        font-size: 2.1em !important; 
+        font-size: 2.1em !important;
         color: #E7E6E0;
     }
-    
+
 
 
 }
@@ -989,6 +1115,134 @@ a {
 
     }
 
+        /*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
+
+
+        .numberOfRooms-Blurb {
+            position: absolute;
+            bottom: 30%;
+            font-weight: 200;
+            font-size: 2.5em;
+            opacity: 0.7;
+            text-align: center;
+            margin: 0;
+    
+        }
+    
+        /*---POP UP INFO---*/
+    
+        .tapToAddRoomPopUp,
+        .typeInBoxPopUp {
+            position: absolute;
+            height: 40px;
+            animation-name: overlay;
+            display: none;
+            animation-duration: 7s;
+            animation-delay: 2s;
+    
+        }
+    
+        .tapToAddRoomPopUp {
+            top: 28%;
+            left: 7%;
+            z-index: 1;
+    
+        }
+    
+        .typeInBoxPopUp {
+            right: 20%;
+            top: 63%;
+            z-index: 1;
+    
+        }
+    
+        /*---BUTTONS---*/
+    
+        .bedroomsButton,
+        .bathroomsButton,
+        .kitchensButton {
+            position: relative;
+            background-color: transparent;
+            height: 90px;
+            width: 50%;
+            transform: translateX(-10%);
+            border: 1px solid #F4B494;
+            color: #E7E6E0;
+            font-size: 2.1em;
+            z-index: 1;
+    
+    
+        }
+    
+        .bedroomsButton::before,
+        .bathroomsButton::before,
+        .kitchensButton::before {
+            background: none;
+            border: 1px solid #F4B494;
+            content: "";
+            display: block;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            right: 3px;
+            bottom: 3px;
+            pointer-events: none;
+    
+        }
+    
+        .roomsAmount {
+            position: absolute;
+            top: 40%;
+            padding-bottom: 2%;
+            width: 50px;
+            height: 45px;
+            right: -60px;
+            border: none;
+            border-bottom: 1px solid #F4B494;
+            outline: none;
+            font-size: 1.4em;
+            text-align: center;
+            background-color: transparent;
+            color: #fff;
+        }
+    
+        .addRoom,
+        .subtractRoom {
+            position: absolute;
+            font-size: 1.3em;
+            width: 50%;
+            height: 45px;
+            z-index: 1;
+            display: flex;
+    
+        }
+    
+        .addRoom {
+            position: absolute;
+            left: 0;
+        }
+    
+        .subtractRoom {
+            position: absolute;
+            right: 0;
+        }
+    
+        .plusOne,
+        .subtractOne {
+            position: absolute;
+            align-self: center;
+    
+        }
+    
+        .plusOne {
+            left: 10%;
+        }
+    
+        .subtractOne {
+            right: 14%;
+        }
+    
+
     .nextButton {
         position: relative;
         height: 10%;
@@ -996,8 +1250,7 @@ a {
         font-size: 2.7em !important;
         color: #E7E6E0;
     }
-    
-   
+
 
 
 }
@@ -1293,5 +1546,3 @@ a {
 
 
 }
-
-
