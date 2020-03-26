@@ -289,6 +289,15 @@ a {
         right: 14%;
     }
 
+    .nextButton {
+        position: relative;
+        height: 10%;
+        top: 7% !important;
+        font-size: 1.3em !important;
+        color: #E7E6E0;
+    }
+
+
 
 }
 
@@ -548,6 +557,15 @@ a {
         right: 14%;
     }
 
+    .nextButton {
+        position: relative;
+        height: 10%;
+        top: 4%;
+        font-size: 1.8em;
+        color: #E7E6E0;
+    }
+
+
 
 
 }
@@ -718,6 +736,11 @@ a {
 
     }
 
+    .linkTags {
+        margin-right: 70.5%;
+    }
+
+
     /*---TOP SERVICE CONTENTS---*/
 
     .selectionWrap {
@@ -794,13 +817,13 @@ a {
     .basicCleanButton,
     .deepCleanButton,
     .movingInOutButton {
-        position: relative;
+        position: absolute;
         background-color: transparent;
         height: 70px;
         width: 70%;
         border: 1px solid #F4B494;
         color: #E7E6E0;
-        font-size: 1.3em;
+        font-size: 1.5em;
 
     }
 
@@ -852,6 +875,11 @@ a {
 
 
     }
+
+    .linkTags {
+        margin-right: 70.5%;
+    }
+
 
     /*---TOP SERVICE CONTENTS---*/
 
@@ -929,7 +957,7 @@ a {
     .basicCleanButton,
     .deepCleanButton,
     .movingInOutButton {
-        position: relative;
+        position: absolute;
         background-color: transparent;
         height: 85px;
         width: 70%;
@@ -954,6 +982,7 @@ a {
         pointer-events: none;
 
     }
+   
 
 
 }
@@ -989,6 +1018,10 @@ a {
         justify-content: center;
 
 
+    }
+
+    .linkTags {
+        margin-left: 44.5%;
     }
 
     /*---TOP SERVICE CONTENTS---*/
@@ -1059,7 +1092,7 @@ a {
     .buttonsWrap {
         position: relative;
         height: 55%;
-        top: 3%;
+        top: 0%;
         flex-flow: column;
         justify-content: space-around;
     }
@@ -1068,7 +1101,7 @@ a {
     .basicCleanButton,
     .deepCleanButton,
     .movingInOutButton {
-        position: relative;
+        position: absolute;
         background-color: transparent;
         height: 75px;
         width: 25%;
