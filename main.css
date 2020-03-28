@@ -455,7 +455,7 @@ a {
     }
 
     .tapToAddRoomPopUp {
-        top: 28%;
+        top: 26%;
         left: 7%;
         z-index: 1;
 
@@ -463,7 +463,7 @@ a {
 
     .typeInBoxPopUp {
         right: 20%;
-        top: 63%;
+        top: 57%;
         z-index: 1;
 
     }
