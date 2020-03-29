@@ -20,25 +20,35 @@
     <!--FORM-->
 
     <div class="locationForm">
-        <input id="nameField" type="text" autocomplete="off" placeholder="Full Name">
-        <input id="emailField" type="email" autocomplete="off" placeholder="Email Address (Optional)">
+        <input id="nameField" type="text" autocomplete="off" placeholder="Full Name" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Full Name'">
+        <input id="emailField" type="email" autocomplete="off" placeholder="Email Address (optional)"
+            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address (optional)'">
         <p class="cleaningLocation_title">Cleaning Location:</p>
-        <input id="streetAddress" type="text" autocomplete="off" placeholder="Street Address">
-        <input id="townCity" type="text" autocomplete="off" placeholder="Town/City">
-        <input id="postcode" type="text" autocomplete="off" placeholder="Postcode">
+        <input id="streetAddress" type="text" autocomplete="off" placeholder="Street Address"
+            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Street Address'">
+        <input id="townCity" type="text" autocomplete="off" placeholder="Town/City" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Town/City'">
+        <input id="postcode" type="text" autocomplete="off" placeholder="Postcode" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Postcode'">
     </div>
 
     <!--DESCRIPTION BOX-->
 
     <div class="descriptionBoxWrap">
         <textarea id="cleaning_description_field" autocomplete="off"
-            placeholder="Please give a short description of your cleaning needs. i.e Washing dishes,vacuuming throughout..."></textarea>
+            placeholder="Please give a short description of your cleaning needs. i.e Washing dishes,vacuuming throughout..."
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Please give a short description of your cleaning needs. i.e Washing dishes,vacuuming throughout...'"></textarea>
     </div>
 
-        <!--BOTTOM NEXT BUTTON-->
+    <!--BOTTOM NEXT BUTTON-->
 
-        <div class="nextButton">Next</div>
-
+    <div class="findCleanerWrap">
+        <a href="#">
+            <div class="findCleaner">Find me a cleaner</div>
+        </a>
+    </div>
 
 </body>
 

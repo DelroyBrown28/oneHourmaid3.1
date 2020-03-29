@@ -57,7 +57,8 @@ a {
     .bathroomsButton,
     .kitchensButton,
     .nextButton_rooms,
-    .nextButton_index_faded {
+    .nextButton_index_faded,
+    .findCleanerWrap {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -498,11 +499,13 @@ a {
 
 
 
-
-    .nextButton {
+    .findCleanerWrap {
         position: relative;
-        height: 10%;
-        top: 2% !important;
+        height: 13%;
+    }
+
+    .findCleaner {
+        position: relative;
         font-size: 1.3em !important;
         color: #E7E6E0;
     }
