@@ -293,7 +293,8 @@ a {
 
 
     .basicClean_LocationForm_Title,
-    .locationForm {
+    .locationForm,
+    .descriptionBoxWrap {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -317,7 +318,7 @@ a {
         height: 50%;
         width: 100%;
         border: 1px solid white;
-        
+
     }
 
     #nameField,
@@ -362,6 +363,18 @@ a {
         bottom: 16%;
     }
 
+    .cleaningLocation_title {
+        position: absolute;
+        left: 10%;
+        top: 38%;
+        color: #E7E6E0;
+        font-weight: 600;
+        font-size: 0.8em;
+        margin: 0;
+        color: #F4B494;
+    }
+
+
 
 
     ::placeholder {
@@ -394,19 +407,67 @@ a {
 
     }
 
-    .cleaningLocation_title {
-        position: absolute;
-        left: 10%;
-        top: 38%;
-        color: #E7E6E0;
-        font-weight: 600;
-        font-size: 0.8em;
-        margin: 0;
-        color: #F4B494;
+    /*---CLEANING DESCRIPTION BOX---*/
+
+
+    .descriptionBoxWrap {
+        position: relative;
+        width: 100%;
+        height: 20%;
+        border: 1px solid white;
     }
 
+    #cleaning_description_field {
+        position: absolute;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid #F4B494;
+        width: 80%;
+        height: 80%;
+        resize: none;
+        padding: 3% 0% 0% 3%;
+        color: #E7E6E0;
+        font-family: 'Josefin Sans', sans-serif;
 
+    }
 
+    textarea::-webkit-input-placeholder {
+        color: #E7E6E0;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        font-size: 1.4em;
+    }
+
+    textarea:-moz-placeholder {
+        /* Firefox 18- */
+        color: #E7E6E0;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        font-size: 1.4em;
+    }
+
+    textarea::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #E7E6E0;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        font-size: 1.4em;
+    }
+
+    textarea:-ms-input-placeholder {
+        color: #E7E6E0;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        font-size: 1.4em;
+    }
+
+    textarea::placeholder {
+        color: #E7E6E0;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        font-size: 1.4em;
+    }
 
 
 
