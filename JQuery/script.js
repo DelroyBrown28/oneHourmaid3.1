@@ -2,6 +2,10 @@ $(document).ready(function () {
 
 
 
+    
+
+
+
     //DISPLAYS tap to add MESSAGE WHEN HOVERED
     $(".bedroomsButton").mouseenter(showTapToAddPopUp);
     function showTapToAddPopUp() {

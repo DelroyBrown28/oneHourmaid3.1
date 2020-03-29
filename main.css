@@ -55,7 +55,8 @@ a {
     .movingInOut-submitButton,
     .bedroomsButton,
     .bathroomsButton,
-    .kitchensButton {
+    .kitchensButton,
+    .nextButton_rooms {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -287,6 +288,17 @@ a {
         right: 14%;
     }
 
+    .nextButton_rooms {
+        position: relative;
+        height: 18%;
+
+    }
+
+    .next {
+        color: #E7E6E0;
+        font-size: 1.5em;
+        
+    }
     /*-------------------**LOCATION FORM PAGE START**-------------------*/
 
     /*---TOP TITLE---*/
@@ -305,7 +317,7 @@ a {
         position: relative;
         height: 15%;
         width: 100%;
-        
+
         color: #E7E6E0;
         font-size: 1.8em;
     }
@@ -317,7 +329,7 @@ a {
         position: relative;
         height: 50%;
         width: 100%;
-        
+
 
     }
 
@@ -414,7 +426,7 @@ a {
         position: relative;
         width: 100%;
         height: 20%;
-        
+
     }
 
     #cleaning_description_field {
@@ -429,7 +441,7 @@ a {
         padding: 3% 0% 0% 3%;
         color: #E7E6E0;
         font-family: 'Josefin Sans', sans-serif;
-        
+
 
     }
 
