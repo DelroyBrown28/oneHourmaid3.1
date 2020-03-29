@@ -304,7 +304,7 @@ a {
         position: relative;
         height: 15%;
         width: 100%;
-        
+        border: 1px solid white;
         color: #E7E6E0;
         font-size: 1.8em;
     }
@@ -316,14 +316,18 @@ a {
         position: relative;
         height: 50%;
         width: 100%;
+        border: 1px solid white;
         
     }
 
     #nameField,
-    #emailField {
+    #emailField,
+    #streetAddress,
+    #townCity,
+    #postcode {
         position: absolute;
-        top: 10%;
-        width: 75%;
+        display: flex;
+        width: 78%;
         height: 7%;
         background: transparent;
         outline: none;
@@ -336,29 +340,72 @@ a {
 
     }
 
-    #emailField {
-        top: 25%;
+    #nameField {
+        top: 8%;
     }
+
+    #emailField {
+        top: 23%;
+    }
+
+    #streetAddress {
+        position: absolute;
+    }
+
+    #townCity {
+        position: absolute;
+        bottom: 31%;
+    }
+
+    #postcode {
+        position: absolute;
+        bottom: 16%;
+    }
+
+
 
     ::placeholder {
         color: #E7E6E0;
         opacity: 0.5;
         font-size: 0.9em;
-        
+
 
     }
 
     :-moz-placeholder {
+        color: #E7E6E0;
+        opacity: 0.5;
+        font-size: 0.9em;
+
 
     }
 
     :-ms-input-placeholder {
+        color: #E7E6E0;
+        opacity: 0.5;
+        font-size: 0.9em;
 
     }
 
     ::-webkit-input-placeholder {
+        color: #E7E6E0;
+        opacity: 0.5;
+        font-size: 0.9em;
 
     }
+
+    .cleaningLocation_title {
+        position: absolute;
+        left: 10%;
+        top: 38%;
+        color: #E7E6E0;
+        font-weight: 600;
+        font-size: 0.8em;
+        margin: 0;
+        color: #F4B494;
+    }
+
+
 
 
 
