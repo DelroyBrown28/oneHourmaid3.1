@@ -564,6 +564,11 @@ a {
     .movingInOutButton {
         height: 13% !important;
         font-size: 1.7em;
+        border: 1.5px solid #F4B494;
+    }
+
+    .selectionWrap {
+        font-size: 1.3em;
     }
 
     .buttonsWrap {
@@ -580,12 +585,30 @@ a {
     }
 
 
+    .basicCleanButton::before,
+    .deepCleanButton::before,
+    .movingInOutButton::before {
+        background: none;
+        border: 1.5px solid #F4B494;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 5.3px;
+        left: 5.3px;
+        right: 5.3px;
+        bottom: 5.3px;
+        pointer-events: none;
+
+    }
+
+
+
+
     .next_faded {
         position: absolute;
         font-size: 2.7em;
         top: 50%;
     }
-
 
 
     /*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
@@ -752,6 +775,10 @@ a {
 }
 
 @media only screen and (min-device-width : 1024px) {
+
+    .selectionWrap {
+        font-size: 1.5em;
+    }
 
     .selectService-Title {
         font-size: 2.7em;
