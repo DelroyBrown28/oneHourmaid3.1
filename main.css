@@ -424,8 +424,6 @@ a {
     }
 
 
-
-
     ::placeholder {
         color: #E7E6E0;
         opacity: 0.5;
@@ -542,7 +540,17 @@ a {
     }
 }
 
-@media only screen and (min-device-width : 414px) {}
+@media only screen and (min-device-width : 414px) {
+
+    .selectService-Blurb {
+        top: 40%;
+    }
+
+    .buttonsWrap {
+        top: -1.5%;
+    }
+
+}
 
 /*--ipads-----*/
 
@@ -554,11 +562,28 @@ a {
     .basicCleanButton,
     .deepCleanButton,
     .movingInOutButton {
-        height: 15% !important;
+        height: 13% !important;
+        font-size: 1.7em;
     }
 
+    .buttonsWrap {
+        height: 50%;
+    }
+
+    .selectService-Title {
+        font-size: 2em;
+    }
+
+    .selectService-Blurb {
+        font-size: 2em;
+        top: 42%;
+    }
+
+
     .next_faded {
+        position: absolute;
         font-size: 2.7em;
+        top: 50%;
     }
 
 
