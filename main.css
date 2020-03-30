@@ -989,6 +989,29 @@ a {
         justify-content: space-around;
     }
 
+    .basicCleanButton,
+    .deepCleanButton,
+    .movingInOutButton {
+        border: 1px solid #F4B494;
+    }
+
+    .basicCleanButton::before,
+    .deepCleanButton::before,
+    .movingInOutButton::before {
+        background: none;
+        border: 1px solid #F4B494;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        pointer-events: none;
+
+    }
+
+
     .next_faded {
         top: 50%;
         cursor: not-allowed;
