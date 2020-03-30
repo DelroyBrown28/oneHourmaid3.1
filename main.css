@@ -51,12 +51,13 @@ a {
     .deepCleanButton,
     .movingInOutButton,
     .nextButton,
+    .backButton,
     .deepClean-submitButton,
     .movingInOut-submitButton,
     .bedroomsButton,
     .bathroomsButton,
     .kitchensButton,
-    .nextButton_rooms,
+    .nextButtonWrap,
     .nextButton_index_faded,
     .findCleanerWrap {
         display: flex;
@@ -182,7 +183,7 @@ a {
 
     .numberOfRooms-Blurb {
         position: absolute;
-        bottom: 30%;
+        bottom: 40%;
         font-weight: 200;
         font-size: 1em;
         text-align: center;
@@ -204,7 +205,7 @@ a {
     }
 
     .tapToAddRoomPopUp {
-        top: 28%;
+        top: 26%;
         left: 7%;
         z-index: 1;
 
@@ -212,7 +213,7 @@ a {
 
     .typeInBoxPopUp {
         right: 20%;
-        top: 63%;
+        top: 60%;
         z-index: 1;
 
     }
@@ -302,17 +303,38 @@ a {
         right: 14%;
     }
 
-    .nextButton_rooms {
+    /*---NEXT BUTTON---*/
+
+    .nextButtonWrap {
         position: relative;
-        height: 18%;
+        width: 100vw;
+        height: 17%;
 
     }
 
-    .next {
+    .nextButton,
+    .backButton {
+        position: absolute;
         color: #E7E6E0;
-        font-size: 1.5em;
+        font-size: 1.2em;
+        font-weight: 600;
+        width: 50%;
+        height: 40%;
+        background-color: #F4B494;
+    }
+
+    .nextButton {
+        bottom: 0;
+        right: 0;
 
     }
+
+    .backButton {
+        bottom: 0;
+        left: 0;
+    }
+
+
 
     /*-------------------**LOCATION FORM PAGE START**-------------------*/
 
@@ -768,12 +790,37 @@ a {
         right: 14%;
     }
 
-    .nextButton {
+    /*---NEXT BUTTON---*/
+
+
+    .nextButtonWrap {
         position: relative;
-        height: 10%;
-        top: 6% !important;
-        font-size: 1.8em;
+        width: 100vw;
+        height: 22%;
+
+
+    }
+
+    .nextButton,
+    .backButton {
+        position: absolute;
         color: #E7E6E0;
+        font-size: 1.2em;
+        font-weight: 600;
+        width: 50%;
+        height: 40%;
+        background-color: #F4B494;
+    }
+
+    .nextButton {
+        bottom: 0;
+        right: 0;
+
+    }
+
+    .backButton {
+        bottom: 0;
+        left: 0;
     }
 
 
@@ -910,12 +957,37 @@ a {
 
     }
 
-    .nextButton {
+    /*---NEXT BUTTON---*/
+
+
+    .nextButtonWrap {
         position: relative;
-        height: 10%;
-        top: 3% !important;
-        font-size: 1.8em;
+        width: 100vw;
+        height: 22%;
+
+
+    }
+
+    .nextButton,
+    .backButton {
+        position: absolute;
         color: #E7E6E0;
+        font-size: 1.2em;
+        font-weight: 600;
+        width: 50%;
+        height: 40%;
+        background-color: #F4B494;
+    }
+
+    .nextButton {
+        bottom: 0;
+        right: 0;
+
+    }
+
+    .backButton {
+        bottom: 0;
+        left: 0;
     }
 
 
@@ -1184,12 +1256,37 @@ a {
     }
 
 
-    .nextButton {
+    /*---NEXT BUTTON---*/
+
+
+    .nextButtonWrap {
         position: relative;
-        height: 10%;
-        top: 6% !important;
-        font-size: 2.1em !important;
+        width: 100vw;
+        height: 22%;
+
+
+    }
+
+    .nextButton,
+    .backButton {
+        position: absolute;
         color: #E7E6E0;
+        font-size: 1.8em;
+        font-weight: 600;
+        width: 50%;
+        height: 40%;
+        background-color: #F4B494;
+    }
+
+    .nextButton {
+        bottom: 0;
+        right: 0;
+
+    }
+
+    .backButton {
+        bottom: 0;
+        left: 0;
     }
 
 
@@ -1458,12 +1555,37 @@ a {
     }
 
 
-    .nextButton {
+    /*---NEXT BUTTON---*/
+
+
+    .nextButtonWrap {
         position: relative;
-        height: 10%;
-        top: 3% !important;
-        font-size: 2.7em !important;
+        width: 100vw;
+        height: 22%;
+
+
+    }
+
+    .nextButton,
+    .backButton {
+        position: absolute;
         color: #E7E6E0;
+        font-size: 2.3em;
+        font-weight: 600;
+        width: 50%;
+        height: 40%;
+        background-color: #F4B494;
+    }
+
+    .nextButton {
+        bottom: 0;
+        right: 0;
+
+    }
+
+    .backButton {
+        bottom: 0;
+        left: 0;
     }
 
 
