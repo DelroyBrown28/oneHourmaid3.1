@@ -1033,16 +1033,16 @@ a {
 
     }
 
-    .tapToAddRoomPopUp {
+    .tapToAddRoomPopUp { /*---HELPFUL POP UPS---*/
         top: 27%;
-        left: 30%;
+        left: 33%;
         z-index: 1;
 
     }
 
-    .typeInBoxPopUp {
-        right: 38%;
-        top: 60%;
+    .typeInBoxPopUp {  /*---HELPFUL POP UPS---*/
+        right: 39%;
+        top: 55%;
         z-index: 1;
 
     }
@@ -1066,7 +1066,7 @@ a {
         position: relative;
         background-color: transparent;
         height: 75px;
-        width: 25%;
+        width: 40%;
         transform: translateX(-5%);
         border: 1px solid #F4B494;
         color: #E7E6E0;
@@ -1097,7 +1097,7 @@ a {
         height: 45px;
         right: -80px;
         border-bottom: 1px solid #F4B494;
-        bottom: 0;
+        top: 28%;
         outline: none;
         font-size: 1.4em;
         text-align: center;
