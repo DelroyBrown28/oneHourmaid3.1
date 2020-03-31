@@ -341,7 +341,7 @@ a {
     /*---TOP TITLE---*/
 
 
-    .basicClean_LocationForm_Title,
+    .locationForm_blurb,
     .locationForm,
     .descriptionBoxWrap {
         display: flex;
@@ -350,12 +350,15 @@ a {
 
     }
 
-    .basicClean_LocationForm_Title {
+    .locationForm_blurb {
         position: relative;
         height: 15%;
         width: 100%;
+        top: 2%;
         color: #E7E6E0;
-        font-size: 1.8em;
+        text-align: center;
+        font-size: 1.1em;
+        font-weight: 100;
     }
 
     /*---NAME AND LOCATION FORM---*/
@@ -601,8 +604,6 @@ a {
     }
 
 
-
-
     .next_faded {
         position: absolute;
         font-size: 2.7em;
@@ -746,6 +747,10 @@ a {
         padding-left: 1%;
         font-size: 1.3em;
 
+    }
+
+    .locationForm_blurb {
+        font-size: 1.8em;
     }
 
     .cleaningLocation_title {
@@ -986,7 +991,7 @@ a {
 
 
 
-    .basicClean_LocationForm_Title {
+    .locationForm_blurb {
         font-size: 2.5em;
     }
 
@@ -1285,8 +1290,8 @@ a {
 
 
 
-        .basicClean_LocationForm_Title {
-            font-size: 2.5em;
+        .locationForm_blurb {
+            font-size: 2.2em;
         }
     
         #nameField,
