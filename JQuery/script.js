@@ -1,11 +1,6 @@
 $(document).ready(function () {
 
 
-
-    
-
-
-
     //DISPLAYS tap to add MESSAGE WHEN HOVERED
     $(".bedroomsButton").mouseenter(showTapToAddPopUp);
     function showTapToAddPopUp() {
@@ -19,11 +14,6 @@ $(document).ready(function () {
         $(".tapToAddRoomPopUp").fadeOut(800);
         $(".typeInBoxPopUp").fadeOut();
     }
-
-
-
-
-
 
 
 
@@ -42,6 +32,7 @@ $(document).ready(function () {
         el.addEventListener("click", (e) => {
             let input = e.target.closest(".bedroomsButton,.bathroomsButton, .kitchensButton").querySelector(".roomsAmount");
             input.value = parseInt(input.value) - 1;
+            
         });
     });
 

@@ -199,8 +199,6 @@ a {
         height: 40px;
         animation-name: overlay;
         display: none;
-        animation-duration: 7s;
-        animation-delay: 2s;
 
     }
 
@@ -216,6 +214,16 @@ a {
         top: 60%;
         z-index: 1;
 
+    }
+
+    @keyframes showPopup {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 
     /*---BUTTONS---*/
@@ -326,7 +334,7 @@ a {
     .nextButton {
         bottom: 0;
         right: 0;
-        
+
 
     }
 
@@ -1287,78 +1295,78 @@ a {
         right: 14%;
     }
 
-        /*-------------------**LOCATION FORM PAGE START**-------------------*/
+    /*-------------------**LOCATION FORM PAGE START**-------------------*/
 
 
 
-        .locationForm_blurb {
-            font-size: 2.2em;
-        }
-    
-        #nameField,
-        #emailField,
-        #streetAddress,
-        #townCity,
-        #postcode {
-            padding-left: 1%;
-            font-size: 1.5em;
-            width: 50%;
-    
-        }
-    
-        .cleaningLocation_title {
-            font-size: 1.3em;
-            left: 24%;
-        }
-    
-        #cleaning_description_field {
-            width: 45%;
-        }
-    
-        textarea::-webkit-input-placeholder {
-            color: #E7E6E0;
-            font-family: 'Josefin Sans', sans-serif;
-            text-align: center;
-            font-size: 2.1em;
-            padding: 0%;
+    .locationForm_blurb {
+        font-size: 2.2em;
+    }
 
-        }
-    
-        textarea:-moz-placeholder {
-            /* Firefox 18- */
-            color: #E7E6E0;
-            font-family: 'Josefin Sans', sans-serif;
-            text-align: center;
-            font-size: 2.1em;
-        }
-    
-        textarea::-moz-placeholder {
-            /* Firefox 19+ */
-            color: #E7E6E0;
-            font-family: 'Josefin Sans', sans-serif;
-            text-align: center;
-            font-size: 2.1em;
-        }
-    
-        textarea:-ms-input-placeholder {
-            color: #E7E6E0;
-            font-family: 'Josefin Sans', sans-serif;
-            text-align: center;
-            font-size: 2.1em;
-        }
-    
-        textarea::placeholder {
-            color: #E7E6E0;
-            font-family: 'Josefin Sans', sans-serif;
-            text-align: center;
-            font-size: 2.1em;
-        }
-    
-        .findCleaner {
-            font-size: 1.7em !important;
-            transform: translateY(50%);
-        }
-    
+    #nameField,
+    #emailField,
+    #streetAddress,
+    #townCity,
+    #postcode {
+        padding-left: 1%;
+        font-size: 1.5em;
+        width: 50%;
+
+    }
+
+    .cleaningLocation_title {
+        font-size: 1.3em;
+        left: 24%;
+    }
+
+    #cleaning_description_field {
+        width: 45%;
+    }
+
+    textarea::-webkit-input-placeholder {
+        color: #E7E6E0;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        font-size: 2.1em;
+        padding: 0%;
+
+    }
+
+    textarea:-moz-placeholder {
+        /* Firefox 18- */
+        color: #E7E6E0;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        font-size: 2.1em;
+    }
+
+    textarea::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #E7E6E0;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        font-size: 2.1em;
+    }
+
+    textarea:-ms-input-placeholder {
+        color: #E7E6E0;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        font-size: 2.1em;
+    }
+
+    textarea::placeholder {
+        color: #E7E6E0;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        font-size: 2.1em;
+    }
+
+    .findCleaner {
+        font-size: 1.7em !important;
+        transform: translateY(50%);
+    }
+
 
 
 
