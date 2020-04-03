@@ -17,13 +17,15 @@ $(document).ready(function () {
         $(".typeInBoxPopUp").fadeOut();
     }
 
-
+    
     $("#nameField").focusin(function() {
         $("#contactField").fadeOut();
         $(".cleaningLocation_title").fadeOut();
         $("#streetAddress").fadeOut();
         $("#townCity").fadeOut();
         $("#postcode").fadeOut();
+        $("#cleaning_description_field").fadeOut();
+
 
     });
 
@@ -33,6 +35,8 @@ $(document).ready(function () {
         $("#streetAddress").fadeIn();
         $("#townCity").fadeIn();
         $("#postcode").fadeIn();
+        $("#cleaning_description_field").fadeIn();
+
 
 
     });
