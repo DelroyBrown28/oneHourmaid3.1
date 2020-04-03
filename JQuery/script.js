@@ -3,17 +3,29 @@ $(document).ready(function () {
 
     //DISPLAYS tap to add MESSAGE WHEN HOVERED
     $(".bedroomsButton").mouseenter(showTapToAddPopUp);
+
     function showTapToAddPopUp() {
         $(".tapToAddRoomPopUp").fadeIn();
         $(".typeInBoxPopUp").fadeIn(800);
     }
-    
+
 
     $(".bedroomsButton").mouseleave(hideTapToAddPopUp);
+
     function hideTapToAddPopUp() {
         $(".tapToAddRoomPopUp").fadeOut(800);
         $(".typeInBoxPopUp").fadeOut();
     }
+
+
+    $("#nameField").focusin(function() {
+        $("#contactField").fadeOut();
+    });
+
+    $("#nameField").focusout(function() {
+        $("#contactField").fadeIn();
+    });
+
 
 
 
@@ -32,7 +44,7 @@ $(document).ready(function () {
         el.addEventListener("click", (e) => {
             let input = e.target.closest(".bedroomsButton,.bathroomsButton, .kitchensButton").querySelector(".roomsAmount");
             input.value = parseInt(input.value) - 1;
-            
+
         });
     });
 

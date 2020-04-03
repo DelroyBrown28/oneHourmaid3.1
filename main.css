@@ -382,7 +382,7 @@ a {
     }
 
     #nameField,
-    #emailField,
+    #contactField,
     #streetAddress,
     #townCity,
     #postcode {
@@ -405,7 +405,7 @@ a {
         top: 8%;
     }
 
-    #emailField {
+    #contactField {
         top: 23%;
     }
 
@@ -749,7 +749,7 @@ a {
     /*-------------------**LOCATION FORM PAGE START**-------------------*/
 
     #nameField,
-    #emailField,
+    #contactField,
     #streetAddress,
     #townCity,
     #postcode {
@@ -1005,7 +1005,7 @@ a {
     }
 
     #nameField,
-    #emailField,
+    #contactField,
     #streetAddress,
     #townCity,
     #postcode {
@@ -1304,7 +1304,7 @@ a {
     }
 
     #nameField,
-    #emailField,
+    #contactField,
     #streetAddress,
     #townCity,
     #postcode {
