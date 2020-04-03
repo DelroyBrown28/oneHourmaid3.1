@@ -37,9 +37,7 @@ $(document).ready(function () {
         $("#postcode").fadeIn();
         $("#cleaning_description_field").fadeIn();
         $(".findCleanerWrap").fadeIn();
-
     });
-
 
     $("#contactField").focusin(function () {
         $("#nameField").fadeOut();
@@ -59,7 +57,6 @@ $(document).ready(function () {
         $("#postcode").fadeIn();
         $("#cleaning_description_field").fadeIn();
         $(".findCleanerWrap").fadeIn();
-
     });
 
     $("#streetAddress").focusin(function () {
@@ -80,7 +77,6 @@ $(document).ready(function () {
         $("#postcode").fadeIn();
         $("#cleaning_description_field").fadeIn();
         $(".findCleanerWrap").fadeIn();
-
     });
 
     $("#townCity").focusin(function () {
@@ -101,7 +97,6 @@ $(document).ready(function () {
         $("#townCity").fadeIn();
         $("#cleaning_description_field").fadeIn();
         $(".findCleanerWrap").fadeIn();
-
     });
 
     $("#postcode").focusin(function () {
@@ -122,13 +117,12 @@ $(document).ready(function () {
         $("#townCity").fadeIn();
         $("#cleaning_description_field").fadeIn();
         $(".findCleanerWrap").fadeIn();
-
     });
 
     $("#cleaning_description_field").focusin(function () {
         $(".descriptionBoxWrap").animate({
             bottom: "40%",
-        });     //PUSHES TEXT BOX UP PTHE PAGE TO GIVE ROOM TO THE POP UP KEYBOARD
+        }); //PUSHES TEXT BOX UP PTHE PAGE TO GIVE ROOM TO THE POP UP KEYBOARD
         $("#nameField").fadeOut();
         $(".cleaningLocation_title").fadeOut();
         $("#contactField").fadeOut();
@@ -136,14 +130,12 @@ $(document).ready(function () {
         $("#townCity").fadeOut();
         $("#postcode").fadeOut();
         $(".findCleanerWrap").fadeOut();
-
-
     });
 
     $("#cleaning_description_field").focusout(function () {
         $(".descriptionBoxWrap").animate({
             bottom: "0%",
-        });     //BRINGS TEXT BOX BACK DOWN TO ORIGINAL STATE
+        }); //BRINGS TEXT BOX BACK DOWN TO ORIGINAL STATE
         $("#nameField").fadeIn();
         $(".cleaningLocation_title").fadeIn();
         $("#contactField").fadeIn();
@@ -151,18 +143,7 @@ $(document).ready(function () {
         $("#townCity").fadeIn();
         $("#postcode").fadeIn();
         $(".findCleanerWrap").fadeIn();
-
-
-
     });
-
-
-
-
-
-
-
-
 
 
     //INCREMENTS ROOMS BY 1
