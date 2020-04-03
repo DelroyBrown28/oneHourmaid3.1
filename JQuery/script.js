@@ -20,10 +20,21 @@ $(document).ready(function () {
 
     $("#nameField").focusin(function() {
         $("#contactField").fadeOut();
+        $(".cleaningLocation_title").fadeOut();
+        $("#streetAddress").fadeOut();
+        $("#townCity").fadeOut();
+        $("#postcode").fadeOut();
+
     });
 
     $("#nameField").focusout(function() {
         $("#contactField").fadeIn();
+        $(".cleaningLocation_title").fadeIn();
+        $("#streetAddress").fadeIn();
+        $("#townCity").fadeIn();
+        $("#postcode").fadeIn();
+
+
     });
 
 
