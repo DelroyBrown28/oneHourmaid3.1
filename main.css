@@ -63,7 +63,8 @@ a {
     .locationForm_blurb,
     .locationForm,
     .descriptionBoxWrap,
-    .movingInOut_form {
+    .movingInOut_form,
+    .scheduleClean_wrap {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -543,12 +544,12 @@ a {
         position: relative;
         height: 15%;
         width: 100%;
-        top: 3%;
+        top: 5%;
         color: #E7E6E0;
         text-align: center;
         font-size: 1.1em;
         font-weight: 100;
-        border: 1px solid white;
+
 
     }
 
@@ -556,7 +557,6 @@ a {
         position: relative;
         width: 100%;
         height: 65%;
-        border: 1px solid white;
         flex-flow: column;
         justify-content: space-evenly;
     }
@@ -594,20 +594,20 @@ a {
     }
 
     ::-webkit-datetime-edit-day-field {
-        color: #E7E6E0;
+        color: #F4B494;
         text-transform: uppercase;
 
     }
 
     ::-webkit-datetime-edit-month-field {
-        color: #E7E6E0;
+        color: #F4B494;
         text-transform: uppercase;
 
 
     }
 
     ::-webkit-datetime-edit-year-field {
-        color: #E7E6E0;
+        color: #F4B494;
         text-transform: uppercase;
     }
 
@@ -616,7 +616,7 @@ a {
     }
 
     ::-webkit-datetime-edit-text {
-        color: #E7E6E0;
+        color: #F4B494;
         padding: 0 0.3em;
     }
 
@@ -626,6 +626,17 @@ a {
     }
 
 
+    .scheduleClean_wrap {
+        position: relative;
+        width: 100%;
+        height: 19%;
+    }
+
+    .scheduleCleanButton {
+        position: relative;
+        color: #E7E6E0;
+
+    }
 
 
     @media only screen and (min-device-width : 375px) {
