@@ -25,6 +25,7 @@ $(document).ready(function () {
         $("#townCity").fadeOut();
         $("#postcode").fadeOut();
         $("#cleaning_description_field").fadeOut();
+        $(".findCleanerWrap").fadeOut();
 
 
     });
