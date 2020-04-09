@@ -170,7 +170,8 @@ $(document).ready(function () {
 //GOOGLE MAPS API
 function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 10,
+        zoom: 15,
+        disableDefaultUI: true,
         center: {
             lat: 51.630770,
             lng: -0.735230,
