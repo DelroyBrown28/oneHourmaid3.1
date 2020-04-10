@@ -538,13 +538,14 @@ a {
 
     .findCleanerWrap {
         position: relative;
-        height: 13%;
+        height: 15%;
     }
 
     .findCleaner {
         position: relative;
         font-size: 1.3em !important;
         color: #E7E6E0;
+        
     }
 
     /*-------------------**MOVING IN/OUT FORM PAGE START**-------------------*/
@@ -686,8 +687,6 @@ a {
         text-align: center;
         top: 5.3%;
 
-
-
     }
 
     hr {
@@ -743,8 +742,8 @@ a {
         top: 18%;
         left: 3%;
         z-index: 1;
-        height: 30px;
-        width: 30px;
+        height: 20px;
+        width: 22px;
         background-color: #495B60;
         box-shadow:
             0 2.8px 2.2px rgba(0, 0, 0, 0.07),
@@ -757,15 +756,13 @@ a {
 
     .goBack {
         position: absolute;
-        font-size: 2.5em;
+        font-size: 2em;
         color: #;
     }
 
     .darkStar {
         opacity: 0.3;
     }
-
-
 
 
 

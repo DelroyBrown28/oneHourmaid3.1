@@ -44,24 +44,31 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 15,
         disableDefaultUI: true, //DISABLES GOOGLE MAPS DEFAULT FUNCTIONS
+
         center: {
             lat: 51.630770,
             lng: -0.735230,
         }
-    });
-   
 
-    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+    });
+
+
+    var labels = "S"
     var locations = [{
         lat: 51.630770,
         lng: -0.735230,
     }, ];
 
-    var markers = locations.map(function (locations, i) {
-        return new google.maps.Marker({
-            position: locations,
-            label: labels[i % labels.length]
-        });
+
+    var marker = new google.maps.Marker({
+        position: map.getCenter(),
+        icon: {
+            path: google.maps.SymbolPath.CIRCLE,
+            scale: 6.5,
+        },
+        draggable: true,
+        map: map
     });
 
     var markerCluster = new MarkerClusterer(map, markers, {
@@ -69,4 +76,3 @@ function initMap() {
     });
 
 }
-
