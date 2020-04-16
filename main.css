@@ -73,7 +73,9 @@ a {
     .cleanerInfo,
     .oi,
     .overallRating,
-    .goBackWrap {
+    .goBackWrap,
+    .fadeInButton,
+    .basicCleanText {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -156,29 +158,23 @@ a {
         background-color: transparent;
         height: 50px;
         width: 70%;
-        border: 1px solid #F4B494;
         color: #E7E6E0;
         font-size: 1.3em;
+        border-bottom: 1px solid #F4B494;
+
 
 
     }
 
-
-    .basicCleanButton::before,
-    .deepCleanButton::before,
-    .movingInOutButton::before {
-        background: none;
-        border: 1px solid #F4B494;
-        content: "";
-        display: block;
+    .basicCleanText {
         position: absolute;
-        top: 3px;
-        left: 3px;
-        right: 3px;
-        bottom: 3px;
-        pointer-events: none;
-
+        height: 0px;
+        width: 100%;
+        background-color: rgba(247, 229, 192, 0.507);
+        transition: 0.1s;
     }
+
+
 
     .nextButton_index_faded {
         position: relative;
@@ -545,7 +541,7 @@ a {
         position: relative;
         font-size: 1.3em !important;
         color: #E7E6E0;
-        
+
     }
 
     /*-------------------**MOVING IN/OUT FORM PAGE START**-------------------*/
@@ -1609,4 +1605,8 @@ a {
 
 .goBackWrap:active {
     box-shadow: none;
+}
+
+.basicCleanButton:active>.basicCleanText {
+    height: 50px;
 }
