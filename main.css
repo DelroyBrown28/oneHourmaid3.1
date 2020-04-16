@@ -9,6 +9,7 @@ html {
     margin: 0;
     display: flex;
     flex-flow: column;
+    justify-content: space-evenly;
 
 }
 
@@ -85,17 +86,6 @@ a {
 
 
 
-    /*---TOP SERVICE CONTENTS---*/
-
-    .selectionWrap {
-        position: relative;
-        color: #fff;
-        height: 10%;
-        font-weight: 100;
-        font-size: 0.9em;
-        justify-content: space-around;
-
-    }
 
 
     /*---SELECT SERVICE TITLE AND BLURB---*/
