@@ -42,6 +42,15 @@
 
     </div>
 
+    <!--DELAYS PAGE TRANSITION-->
+
+    <script>
+        $('.linkTags').click(function(e) {
+          e.preventDefault();
+          setTimeout(function(url) { window.location = url }, 1000, this.href);
+        });
+        </script>
+
     <!--BOTTOM NEXT BUTTON-->
 
     <div class="nextButton_index_faded">
