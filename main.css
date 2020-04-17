@@ -153,14 +153,6 @@ a {
 
     }
 
-    .basicCleanText {
-        position: absolute;
-        height: 0px;
-        width: 100%;
-        background-color: rgba(247, 229, 192, 0.507);
-        transition: 0.1s;
-    }
-
 
 
     .nextButton_index_faded {
@@ -753,23 +745,23 @@ a {
 
 
 @media only screen and (min-device-width : 375px) {
-    
-    
+
+
     .serviceTypeTextWrap {
         top: 0;
     }
-    
+
     .selectService-Title {
         font-size: 1.8em;
     }
 
-    
+
     .selectService-Blurb {
         top: 40%;
         font-size: 1.6em;
     }
 
-    
+
     .numberOfRooms-Blurb {
         font-size: 1.3em;
     }
@@ -777,9 +769,9 @@ a {
 
 @media only screen and (min-device-width : 414px) {
 
-    
 
-    
+
+
     .selectService-Blurb {
         top: 40%;
         font-size: 1.6em;
@@ -1349,7 +1341,7 @@ a {
         height: 48%;
         width: 50%;
         font-size: 1.1em;
-        
+
         flex-flow: column;
         justify-content: space-around;
     }
@@ -1587,6 +1579,8 @@ a {
     box-shadow: none;
 }
 
-.basicCleanButton:active>.basicCleanText {
-    height: 50px;
+.basicCleanButton:active,
+.deepCleanButton:active,
+.movingInOutButton:active {
+    background: #F4B494;
 }
