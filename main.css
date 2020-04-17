@@ -58,15 +58,12 @@ a {
     .basicCleanButton,
     .deepCleanButton,
     .movingInOutButton,
-    .nextButton,
-    .backButton,
     .deepClean-submitButton,
     .movingInOut-submitButton,
     .bedroomsButton,
     .bathroomsButton,
     .kitchensButton,
     .nextButtonWrap,
-    .nextButton_index_faded,
     .findCleanerWrap,
     .locationForm_blurb,
     .locationForm,
@@ -78,7 +75,6 @@ a {
     .overallRating,
     .goBackWrap,
     .fadeInButton,
-    .basicCleanText,
     .numberOfRooms-Blurb,
     .rooms-buttonsWrap,
     .nextButtonWrap,
@@ -161,18 +157,6 @@ a {
     }
 
 
-
-    .nextButton_index_faded {
-        position: relative;
-        height: 17%;
-    }
-
-    .next_faded {
-        color: #E7E6E0;
-        font-size: 1.5em;
-        opacity: 0.4;
-
-    }
 
     /*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
 
@@ -824,11 +808,6 @@ a {
     }
 
 
-    .next_faded {
-        position: absolute;
-        font-size: 2.7em;
-        top: 50%;
-    }
 
 
     /*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
@@ -1032,28 +1011,6 @@ a {
         height: 22%;
 
 
-    }
-
-    .nextButton,
-    .backButton {
-        position: absolute;
-        color: #E7E6E0;
-        font-size: 1.8em;
-        font-weight: 600;
-        width: 50%;
-        height: 40%;
-        background-color: #F4B494;
-    }
-
-    .nextButton {
-        bottom: 0;
-        right: 0;
-
-    }
-
-    .backButton {
-        bottom: 0;
-        left: 0;
     }
 
 
@@ -1267,28 +1224,6 @@ a {
         height: 22%;
 
 
-    }
-
-    .nextButton,
-    .backButton {
-        position: absolute;
-        color: #E7E6E0;
-        font-size: 2.3em;
-        font-weight: 600;
-        width: 50%;
-        height: 40%;
-        background-color: #F4B494;
-    }
-
-    .nextButton {
-        bottom: 0;
-        right: 0;
-
-    }
-
-    .backButton {
-        bottom: 0;
-        left: 0;
     }
 
 
