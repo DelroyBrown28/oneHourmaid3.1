@@ -19,12 +19,10 @@
 
 
     <!--SERVICE TITLES AND BLURBS-->
-    <div class="serviceTypeTextWrap">
-        <p class="numberOfRooms-Blurb">Let us know how many and<br>what types of rooms you would<br>like cleaned.</p>
-    </div>
+    <p class="numberOfRooms-Blurb">Let us know how many and<br>what types of rooms you would<br>like cleaned.</p>
 
     <!--NUMBER OF ROOMS BUTTONS-->
-    <div class="buttonsWrap">
+    <div class="rooms-buttonsWrap">
 
         <div class="bedroomsButton">Bedrooms
 
@@ -69,13 +67,33 @@
     <!--BOTTOM NEXT BUTTON-->
 
     <div class="nextButtonWrap">
-        <a href="./cleaning_location_form.html">
-            <div class="nextButton">Next</div>
-        </a>
-        <a href="./index.html">
-            <div class="backButton">Back</div>
-        </a>
+
+        <div class="left">
+            <a class="links" href="./index.html">
+                <i class="fas fa-angle-double-left"></i>
+            </a>
+        </div>
+
+        <div class="right">
+            <a class="links" href="./cleaning_location_form.html">
+                <i class="fas fa-angle-double-right"></i>
+            </a>
+        </div>
+
+
     </div>
+
+    <!--DELAYS PAGE TRANSITION-->
+
+    <script>
+        $('.links').click(function (e) {
+            e.preventDefault();
+            setTimeout(function (url) {
+                window.location = url
+            }, 1000, this.href);
+        });
+    </script>
+
 
 
 </body>

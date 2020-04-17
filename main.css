@@ -25,7 +25,7 @@ html {
 a {
 
     text-decoration: none;
-    color: white;
+    color: #E7E6E0;
 
 
 }
@@ -76,7 +76,12 @@ a {
     .overallRating,
     .goBackWrap,
     .fadeInButton,
-    .basicCleanText {
+    .basicCleanText,
+    .numberOfRooms-Blurb,
+    .rooms-buttonsWrap,
+    .nextButtonWrap,
+    .left,
+    .right {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -171,14 +176,28 @@ a {
 
 
     .numberOfRooms-Blurb {
-        position: absolute;
-        bottom: 40%;
+        position: relative;
+        top: 0;
+        height: 20%;
         font-weight: 200;
-        font-size: 1em;
+        font-size: 1.3em;
         text-align: center;
         margin: 0;
+        color: #E7E6E0;
 
     }
+
+    .rooms-buttonsWrap {
+        position: relative;
+        height: 55%;
+        bottom: 0%;
+        flex-flow: column;
+        justify-content: space-around;
+    }
+
+
+
+
 
     /*---POP UP INFO---*/
 
@@ -230,23 +249,6 @@ a {
         color: #E7E6E0;
         font-size: 1.3em;
         z-index: 1;
-
-
-    }
-
-    .bedroomsButton::before,
-    .bathroomsButton::before,
-    .kitchensButton::before {
-        background: none;
-        border: 1px solid #F4B494;
-        content: "";
-        display: block;
-        position: absolute;
-        top: 3px;
-        left: 3px;
-        right: 3px;
-        bottom: 3px;
-        pointer-events: none;
 
     }
 
@@ -304,33 +306,31 @@ a {
 
     .nextButtonWrap {
         position: relative;
-        width: 100vw;
+        width: 100%;
         height: 17%;
 
     }
 
-    .nextButton,
-    .backButton {
-        position: absolute;
-        color: #E7E6E0;
-        font-size: 1.2em;
-        font-weight: 600;
-        border-top: 1px solid #F4B494;
+    .left,
+    .right {
+        position: relative;
+        height: 100%;
         width: 50%;
-        height: 50%;
+        font-size: 2.5em;
+        color: #E7E6E0;
     }
 
-    .nextButton {
-        bottom: 0;
-        right: 0;
-
-
-    }
-
-    .backButton {
-        bottom: 0;
+    .left {
         left: 0;
     }
+
+    .right {
+        right: 0;
+    }
+
+
+
+
 
 
 
@@ -732,7 +732,7 @@ a {
     .goBack {
         position: absolute;
         font-size: 2em;
-        color: #;
+
     }
 
     .darkStar {
@@ -1561,19 +1561,10 @@ a {
 
 
 
-
-    /*---HOVERS & SUCH---*/
-
-    .basicClean-submitButton:active {
-        opacity: 0.5;
-    }
-
-    .basicClean-submitButton:hover {
-        opacity: 0.5;
-    }
-
-
 }
+
+/*---HOVERS & SUCH---*/
+
 
 .goBackWrap:active {
     box-shadow: none;
@@ -1583,4 +1574,14 @@ a {
 .deepCleanButton:active,
 .movingInOutButton:active {
     background: #F4B494;
+}
+
+.fa-angle-double-left:active {
+    transform: translateX(-10px);
+    background-color: transparent;
+}
+
+.fa-angle-double-right:active {
+    transform: translateX(10px);
+ 
 }
