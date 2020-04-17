@@ -90,8 +90,8 @@ a {
 
     .serviceTypeTextWrap {
         position: relative;
-        top: 3%;
-        height: 18%;
+        bottom: 1%;
+        height: 21%;
         color: #E7E6E0;
 
     }
@@ -107,10 +107,9 @@ a {
 
     .selectService-Blurb {
         position: absolute;
-        bottom: 10%;
+        bottom: 0%;
         font-weight: 200;
         font-size: 1.3em;
-        opacity: 0.7;
         text-align: center;
         margin: 0;
 
@@ -133,7 +132,7 @@ a {
     .buttonsWrap {
         position: relative;
         height: 55%;
-        top: 0;
+        bottom: 7%;
         flex-flow: column;
         justify-content: space-around;
     }
@@ -148,7 +147,7 @@ a {
         width: 70%;
         color: #E7E6E0;
         font-size: 1.3em;
-        border-bottom: 1px solid #F4B494;
+        border: 1px solid #F4B494;
 
 
 
@@ -754,6 +753,23 @@ a {
 
 
 @media only screen and (min-device-width : 375px) {
+    
+    
+    .serviceTypeTextWrap {
+        top: 0;
+    }
+    
+    .selectService-Title {
+        font-size: 1.8em;
+    }
+
+    
+    .selectService-Blurb {
+        top: 40%;
+        font-size: 1.6em;
+    }
+
+    
     .numberOfRooms-Blurb {
         font-size: 1.3em;
     }
@@ -761,12 +777,20 @@ a {
 
 @media only screen and (min-device-width : 414px) {
 
+    
+
+    
     .selectService-Blurb {
         top: 40%;
+        font-size: 1.6em;
+    }
+
+    .selectService-Title {
+        font-size: 1.8em;
     }
 
     .buttonsWrap {
-        top: -1.5%;
+        bottom: 7%;
     }
 
 }
@@ -795,29 +819,12 @@ a {
     }
 
     .selectService-Title {
-        font-size: 2em;
+        font-size: 2.7em;
     }
 
     .selectService-Blurb {
-        font-size: 2em;
+        font-size: 2.3em;
         top: 42%;
-    }
-
-
-    .basicCleanButton::before,
-    .deepCleanButton::before,
-    .movingInOutButton::before {
-        background: none;
-        border: 1.5px solid #F4B494;
-        content: "";
-        display: block;
-        position: absolute;
-        top: 5.3px;
-        left: 5.3px;
-        right: 5.3px;
-        bottom: 5.3px;
-        pointer-events: none;
-
     }
 
 
@@ -1065,11 +1072,11 @@ a {
     }
 
     .selectService-Title {
-        font-size: 2.7em;
+        font-size: 3.3em;
     }
 
     .selectService-Blurb {
-        font-size: 2.5em;
+        font-size: 2.8em;
     }
 
     .buttonsWrap {
@@ -1321,23 +1328,28 @@ a {
         align-items: center;
     }
 
-    .selectionWrap {
-        width: 100%;
-        font-size: 1.3em;
-        justify-content: space-around;
-    }
 
     .serviceTypeTextWrap {
         width: 25%;
 
     }
 
+    .selectService-Title {
+        font-size: 2.8em;
+    }
+
+    .selectService-Blurb {
+        font-size: 2.5em;
+    }
+
+
+
     .buttonsWrap {
         position: relative;
         height: 48%;
         width: 50%;
         font-size: 1.1em;
-        top: 0;
+        
         flex-flow: column;
         justify-content: space-around;
     }
@@ -1348,27 +1360,7 @@ a {
         border: 1px solid #F4B494;
     }
 
-    .basicCleanButton::before,
-    .deepCleanButton::before,
-    .movingInOutButton::before {
-        background: none;
-        border: 1px solid #F4B494;
-        content: "";
-        display: block;
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        right: 5px;
-        bottom: 5px;
-        pointer-events: none;
 
-    }
-
-
-    .next_faded {
-        top: 50%;
-        cursor: not-allowed;
-    }
 
 
     /*-------------------**NUMBER OF ROOMS PAGE START**-------------------*/
