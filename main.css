@@ -630,6 +630,7 @@ a {
 
     #mapWrap {
         position: relative;
+        bottom: 7px;
         width: 100%;
         height: 50%;
 
@@ -652,6 +653,7 @@ a {
         position: relative;
         width: 100%;
         height: 45%;
+        bottom: 2.3%;
     }
 
     .cleaner_name {
@@ -841,7 +843,7 @@ a {
         margin: 0;
 
     }
-    
+
     .rooms-buttonsWrap {
         position: relative;
         height: 55%;
@@ -1074,7 +1076,7 @@ a {
         margin: 0;
 
     }
-    
+
     .rooms-buttonsWrap {
         position: relative;
         height: 55%;
@@ -1408,21 +1410,6 @@ a {
 
     }
 
-    .bedroomsButton::before,
-    .bathroomsButton::before,
-    .kitchensButton::before {
-        background: none;
-        border: 1px solid #F4B494;
-        content: "";
-        display: block;
-        position: absolute;
-        top: 3px;
-        left: 3px;
-        right: 3px;
-        bottom: 3px;
-        pointer-events: none;
-
-    }
 
     .roomsAmount {
         position: absolute;
@@ -1577,7 +1564,7 @@ a {
 
 .fa-angle-double-right:active {
     transform: translateX(10px);
- 
+
 }
 
 .fa-angle-double-left:focus {
