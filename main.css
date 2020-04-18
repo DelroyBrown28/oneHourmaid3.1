@@ -153,9 +153,12 @@ a {
         height: 50px;
         width: 70%;
         color: #E7E6E0;
-        font-size: 1.3em;
         border: 1px solid #F4B494;
-
+        font-size: 1.3em;
+        transition: 0.1s;
+        background: linear-gradient(145deg, #425256, #4e6167);
+        box-shadow: 20px 20px 60px #3e4d52,
+            -20px -20px 60px #54696e;
 
 
     }
@@ -238,6 +241,10 @@ a {
         border: 1px solid #F4B494;
         color: #E7E6E0;
         font-size: 1.3em;
+        background: linear-gradient(145deg, #425256, #4e6167);
+        box-shadow: 20px 20px 60px #3e4d52,
+            -20px -20px 60px #54696e;
+
         z-index: 1;
 
     }
@@ -1494,6 +1501,10 @@ a {
 .deepCleanButton:active,
 .movingInOutButton:active {
     background: #F4B494;
+    border: 1px solid rgba(244, 180, 148, 0.719);
+    background: #495B60;
+    box-shadow: inset 20px 20px 60px #3e4d52,
+        inset -20px -20px 60px #54696e;
 }
 
 .fa-angle-double-left:active {
