@@ -31,6 +31,10 @@ a {
 
 }
 
+.light-star {
+    opacity: 0.3;
+}
+
 
 
 /*--smartphones-----*/
@@ -623,7 +627,7 @@ a {
     #map {
         position: absolute;
         height: 100%;
-        width: inherit;
+        width: 100%;
         box-shadow:
             0 2.8px 2.2px rgba(0, 0, 0, 0.02),
             0 6.7px 5.3px rgba(0, 0, 0, 0.028),
