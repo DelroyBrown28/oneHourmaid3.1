@@ -43,13 +43,25 @@
             onblur="this.placeholder = 'Please give a short description of your cleaning needs. i.e Washing dishes,vacuuming throughout...'"></textarea>
     </div>
 
-    <!--BOTTOM NEXT BUTTON-->
+    <!--FINE ME A CLEANER BUTTON-->
 
     <div class="findCleanerWrap">
-        <a href="./FindCleaner.html">
+        <a class="delayLink" href="./FindCleaner.html">
             <div class="findCleaner">Find me a cleaner</div>
         </a>
     </div>
+
+    <!--DELAYS PAGE TRANSITION-->
+
+    <script>
+        $('.delayLink').click(function (e) {
+            e.preventDefault();
+            setTimeout(function (url) {
+                window.location = url
+            }, 700, this.href);
+        });
+    </script>
+
 
 </body>
 

@@ -22,6 +22,8 @@ html {
 
 }
 
+
+
 a {
 
     text-decoration: none;
@@ -34,6 +36,7 @@ a {
 .light-star {
     opacity: 0.3;
 }
+
 
 
 
@@ -517,6 +520,11 @@ a {
         position: relative;
         font-size: 1.3em !important;
         color: #E7E6E0;
+        padding: 15px 35px;
+        border-radius: 50px;
+        background: linear-gradient(145deg, #425256, #4e6167);
+        box-shadow: 20px 20px 60px #3e4d52,
+            -20px -20px 60px #54696e;
 
     }
 
@@ -647,7 +655,7 @@ a {
     .cleanerInfo {
         position: relative;
         width: 100%;
-        height: 45%;
+        height: 50%;
         bottom: 2.3%;
     }
 
@@ -1569,7 +1577,8 @@ a {
 
 .basicCleanButton:active,
 .deepCleanButton:active,
-.movingInOutButton:active {
+.movingInOutButton:active,
+.findCleaner:active {
     background: #F4B494;
     border: 1px solid rgba(244, 180, 148, 0.719);
     background: #495B60;
@@ -1590,3 +1599,4 @@ a {
 .fa-angle-double-left:focus {
     outline: none;
 }
+
