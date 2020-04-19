@@ -1024,6 +1024,26 @@ a {
 
     }
 
+    /*-------------------FIND ME A CLEANER PAGE START-------------------*/
+
+
+    .cleanerInfo {
+        height: 50%;
+
+    }
+
+    .cleaner_name {
+        font-size: 2em;
+        margin-top: 10px;
+    }
+
+    .cleaner-stats {
+        font-size: 1.7em;
+    }
+
+    .name_overallRating {
+        font-size: 1.3em;
+    }
 
 
 }
@@ -1236,6 +1256,29 @@ a {
 
 
     }
+
+    /*-------------------FIND ME A CLEANER PAGE START-------------------*/
+
+
+
+    .cleanerInfo {
+        height: 50%;
+
+    }
+
+    .cleaner_name {
+        font-size: 2.8em;
+        margin-top: 10px;
+    }
+
+    .cleaner-stats {
+        font-size: 2.1em;
+    }
+
+    .name_overallRating {
+        font-size: 2em;
+    }
+
 
 
 
@@ -1485,6 +1528,33 @@ a {
         font-size: 1.7em !important;
         transform: translateY(50%);
     }
+
+
+
+    /*-------------------FIND ME A CLEANER PAGE START-------------------*/
+
+
+
+    .cleanerInfo {
+        height: 50%;
+        width: 60%;
+
+    }
+
+    .cleaner_name {
+        font-size: 2.5em;
+        margin-top: 10px;
+    }
+
+    .cleaner-stats {
+        font-size: 2.1em;
+    }
+
+    .name_overallRating {
+        font-size: 2em;
+    }
+
+
 
 
 
