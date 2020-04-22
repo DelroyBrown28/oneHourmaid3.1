@@ -71,8 +71,25 @@ function initMap() {
         map: map
     });
 
-    var markerCluster = new MarkerClusterer(map, markers, {
-        imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-    });
+}
 
+//SEND/RECEIVE EMAIL FUNCTION
+
+
+function sendMail(contactForm) {
+    emailjs.send("gmail", "contact_form", {
+            "user_name": contactForm.name.value,
+            "user_email": contactForm.emailaddress.value,
+            "project_request": contactForm.shortDescrip.value
+        })
+        .then(
+            function (response) {
+                console.log("SUCCESS", response);
+            },
+            function (error) {
+                console.log("MESSAGE SENDING FAILED!!", error);
+            }
+        );
+        
+    return false;
 }

@@ -5,10 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
     <script type="text/javascript" src="./JQuery/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="./JQuery/script.js"></script>
     <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_zOJXdo5flT9TmEDrhagtW");
+        })();
+    </script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contactForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // generate the contact number value
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('contact_service', 'contact_form', this);
+            });
+        }
+    </script>
 
     <title>oneHourmaid</title>
 </head>
@@ -20,16 +37,21 @@
 
     <!--FORM-->
 
-    <div class="locationForm">
-        <input id="nameField" type="text" autocomplete="off" placeholder="Full Name" onfocus="this.placeholder = ''"
-            onblur="this.placeholder = 'Full Name'">
-        <input id="contactField" type="number" autocomplete="off" placeholder="Contact Number"
+    <div id="contactForm" class="locationForm">
+        <input name="name" id="nameField" type="text" autocomplete="off" placeholder="Full Name"
+            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'">
+
+        <input name="contactNumber" id="contactField" type="number" autocomplete="off" placeholder="Contact Number"
             onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contact Number'">
+
         <p class="cleaningLocation_title">Cleaning Location:</p>
+
         <input id="streetAddress" type="text" autocomplete="off" placeholder="Street Address"
             onfocus="this.placeholder = ''" onblur="this.placeholder = 'Street Address'">
+
         <input id="townCity" type="text" autocomplete="off" placeholder="Town/City" onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Town/City'">
+
         <input id="postcode" type="text" autocomplete="off" placeholder="Postcode" onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Postcode'">
     </div>
@@ -37,7 +59,7 @@
     <!--DESCRIPTION BOX-->
 
     <div class="descriptionBoxWrap">
-        <textarea id="cleaning_description_field" autocomplete="off"
+        <textarea id="cleaning_description_field" name="shortDescrip" autocomplete="off"
             placeholder="Please give a short description of your cleaning needs. i.e Washing dishes,vacuuming throughout..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Please give a short description of your cleaning needs. i.e Washing dishes,vacuuming throughout...'"></textarea>
@@ -45,9 +67,9 @@
 
     <!--FINE ME A CLEANER BUTTON-->
 
-    <div class="findCleanerWrap">
-        <a class="delayLink" href="./FindCleaner.html">
-            <div class="findCleaner">Find me a cleaner</div>
+    <div class="findCleanerWrap" onsubmit="return sendMail(this);">
+        <a class="delayLink" href="#">
+            <button type="submit" value="send" class="findCleaner">Find me a cleaner</button>
         </a>
     </div>
 

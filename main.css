@@ -86,7 +86,8 @@ a {
     .rooms-buttonsWrap,
     .nextButtonWrap,
     .left,
-    .right {
+    .right,
+    .modolWrap {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1599,4 +1600,3 @@ a {
 .fa-angle-double-left:focus {
     outline: none;
 }
-
