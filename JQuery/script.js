@@ -73,13 +73,13 @@ function initMap() {
 
 }
 
-//SEND/RECEIVE EMAIL FUNCTION
+// SEND/RECEIVE EMAIL FUNCTION
 
 
 function sendMail(contactForm) {
     emailjs.send("gmail", "contact_form", {
             "user_name": contactForm.name.value,
-            "user_email": contactForm.emailaddress.value,
+            "user_email": contactForm.contactNumber.value,
             "project_request": contactForm.shortDescrip.value
         })
         .then(

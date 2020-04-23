@@ -37,7 +37,7 @@
 
     <!--FORM-->
 
-    <div id="contactForm" class="locationForm">
+    <form id="contactForm" class="locationForm">
         <input name="name" id="nameField" type="text" autocomplete="off" placeholder="Full Name"
             onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'">
 
@@ -54,7 +54,7 @@
 
         <input id="postcode" type="text" autocomplete="off" placeholder="Postcode" onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Postcode'">
-    </div>
+    </form>
 
     <!--DESCRIPTION BOX-->
 
@@ -69,7 +69,7 @@
 
     <div class="findCleanerWrap" onsubmit="return sendMail(this);">
         <a class="delayLink" href="#">
-            <button type="submit" value="send" class="findCleaner">Find me a cleaner</button>
+            <button type="submit" value="send" id="submit" class="findCleaner">Find me a cleaner</button>
         </a>
     </div>
 
